@@ -1,0 +1,27 @@
+.p {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  margin-left: 19px;
+  margin-right: 19px;
+}
+.nav {
+  padding: 20px !important;
+}
+.navOne {
+  padding: 20px !important;
+  background-color: rgba(248, 246, 241, 1) !important;
+  border-bottom: 1px solid black;
+}
+.brand {
+  font-family: "Cinzel" decorative;
+  font-size: 21px !important;
+  color: white !important;
+  background-color: black;
+  padding: 6px;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 4px;
+}

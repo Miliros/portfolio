@@ -1,0 +1,49 @@
+.cntnProyects {
+  margin-top: -40px;
+  padding-top: 75px;
+  height: 126vh;
+}
+
+.title {
+  font-size: 49px;
+  line-height: normal;
+  text-align: center;
+}
+.p {
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.cntnTittle {
+  margin-top: 100px;
+  margin: 15px;
+}
+.lineO {
+  display: flex;
+  width: 50%;
+  height: 98vh;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.lineT {
+  display: flex;
+  width: 50%;
+  height: 98vh;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.lines {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+}
+.img {
+  width: 770px;
+  object-fit: scale-down;
+  border: 1px solid black;
+}
