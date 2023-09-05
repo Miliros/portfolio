@@ -1,49 +1,194 @@
 .cntnProyects {
   margin-top: -40px;
-  padding-top: 75px;
-  height: 126vh;
+  padding-top: 25px;
 }
 
 .title {
-  font-size: 49px;
-  line-height: normal;
+  font-size: 39px;
   text-align: center;
+  padding: 3px;
+  letter-spacing: 3px;
+  font-family: valentino;
 }
 .p {
-  font-size: 16px;
+  font-size: 32px;
   line-height: normal;
   letter-spacing: 2px;
-  text-align: center;
+  text-align: start;
+  width: 630px;
+  font-family: valentino;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  /* margin: 10px; */
 }
 .cntnTittle {
   margin-top: 100px;
   margin: 15px;
 }
+
 .lineO {
   display: flex;
-  width: 50%;
-  height: 98vh;
   border-top: 1px solid black;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 100px;
+  flex-direction: row;
+  height: 100vh;
 }
+
+.ctnMacRick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-right: 1px solid black;
+  height: 100%;
+  background-image: url("../../backPropro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ctnMacPoke {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-left: 1px solid black;
+  height: 100%;
+  background-image: url("../../backPropro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border-bottom: 1px solid black; */
+}
+
+.ctnTextRick {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* padding: 60px; */
+}
+
 .lineT {
   display: flex;
   width: 50%;
-  height: 98vh;
+  height: 100vh;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  flex-direction: column;
+  padding-top: 162px;
 }
+
 .lines {
   display: flex;
-  flex-direction: row;
-  margin-top: 60px;
+  flex-direction: column;
+}
+
+.contenedor {
+  position: relative;
 }
 .img {
-  width: 770px;
+  width: 376px;
   object-fit: scale-down;
+}
+
+.imgIpad {
+  width: 490px;
+  position: absolute;
+  top: -17px;
+  right: 0;
+  left: -61px;
+}
+
+.textProyect {
+  text-align: start;
+  /* margin-top: 6px;
+  margin-bottom: 30px; */
+  font-family: satoshi;
+  font-size: 14px;
+  padding-left: 60px;
+  padding-right: 60px;
+  max-width: 600px;
+}
+.backgroundTittle {
+  background-image: url("../../walpaper.jpg");
+  width: 100%;
+  height: 205px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 16px;
+}
+.container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  border-top: 1px solid black;
+  background-color: #ebe9e2;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+.phrase {
+  margin: 1px;
+  font-family: satoshi;
+  font-size: 14px;
+  white-space: nowrap;
+  animation: moveRight linear infinite;
+  animation-duration: 60s; /* Duración de la animación, ajustada al tiempo que tarda en cruzar la pantalla */
+  animation-iteration-count: infinite; /* Repetición infinita */
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(100%); /* Comienza desde la derecha de la pantalla */
+  }
+  to {
+    transform: translateX(-100%); /* Termina en la izquierda de la pantalla */
+  }
+}
+
+.lineTt {
+  width: 100%;
+  height: 5px;
+  border-top: 1px solid black;
+}
+.lineTtt {
+  height: 49vh;
+  width: 100%;
+  height: 5px;
+  border-top: 1px solid black;
+}
+
+.ctnButtonsRick {
+  display: flex;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 25px;
+}
+
+.button {
+  margin-right: 20px;
+  width: 68px;
+  height: 40px;
+  font-size: 12px;
+  background-color: #ebe9e2;
+  font-family: satoshi;
   border: 1px solid black;
+}
+.buttonPhoto {
+  margin-right: 20px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  width: 68px;
+  height: 40px;
+  font-family: satoshi;
+  border: 1px solid black;
+}
+.a {
+  text-decoration: none;
+  color: black;
 }

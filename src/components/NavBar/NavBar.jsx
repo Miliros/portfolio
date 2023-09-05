@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./NavBar.module.css";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 
 export default function navBar() {
   const [nav, setNav] = useState(false);
@@ -38,7 +39,9 @@ export default function navBar() {
           <Link to="contact" smooth={true} duration={500} className={styles.p}>
             Contact me
           </Link>
-          <Link className={styles.p}>CV</Link>
+          <NavLink to="/pdf" target="_blank" className={styles.p}>
+            CV
+          </NavLink>
         </Nav>
       </Container>
     </Navbar>

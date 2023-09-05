@@ -1,10 +1,23 @@
+@font-face {
+  font-family: valentino;
+  src: url(valentino.otf);
+}
+@font-face {
+  font-family: satoshi;
+  src: url(Satoshi-Variable.ttf);
+}
+@font-face {
+  font-family: the seasons;
+  src: url(Fontspring-DEMO-theseasons-reg.otf);
+}
+
 body {
   margin: 0;
   font-family: "Forum", cursive !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 20px !important;
-  background-color: rgba(248, 246, 241, 1) !important;
+  background-color: #ebe9e2 !important;
 }
 
 code {

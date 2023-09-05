@@ -9,8 +9,6 @@ import {
   IconBrandLinkedin,
 } from "@tabler/icons-react";
 
-import { Element } from "react-scroll";
-
 export default function Home() {
   return (
     <section
@@ -29,7 +27,7 @@ export default function Home() {
         style={{
           position: "absolute",
           bottom: "53px",
-          left: "47.5px",
+          left: "44px",
           display: "flex",
           alignItems: "center",
           flexDirection: "column",
@@ -41,12 +39,12 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           >
-            <IconBrandLinkedin stroke="1.2px" />
+            <IconBrandLinkedin size="20px" stroke="1.2px" />
           </a>
         </div>
         <div className={styles.icon}>
           <a href="https://github.com/Miliros" target="_blank" rel="noreferrer">
-            <IconBrandGithub stroke="1.2px" />
+            <IconBrandGithub size="20px" stroke="1.2px" />
           </a>
         </div>
         <div className={styles.icon}>
@@ -55,7 +53,7 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           >
-            <IconBrandFacebook stroke="1.2px" />
+            <IconBrandFacebook size="20px" stroke="1.2px" />
           </a>
         </div>
         <div className={styles.icon}>
@@ -64,7 +62,7 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           >
-            <IconBrandInstagram stroke="1.2px" />
+            <IconBrandInstagram size="20px" stroke="1.2px" />
           </a>
         </div>
         <div className={styles.icon}>
@@ -73,7 +71,7 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           >
-            <IconMail stroke="1.2px" />
+            <IconMail size="20px" stroke="1.2px" />
           </a>
         </div>
       </div>
@@ -89,8 +87,8 @@ export default function Home() {
           professional success. I stand out for being empathetic, decisive and
           creative in each project. <br /> */}
           <br />
-          <strong>Welcome to my Portfolio!</strong>
         </p>
+        <p className={styles.pWelcome}>Welcome to my Portfolio!</p>
       </div>
 
       <div style={{ marginLeft: "80px" }}>
