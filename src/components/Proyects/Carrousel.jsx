@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import pokeHome from "../../PokeHomet.png";
-import pokeDetail from "../../Pokedetail.png";
+import pokedetail from "../../PokeDetail.png";
 import rickLanding from "../../RickLanding.png";
 import rickHome from "../../rickHome.png";
 import rickEpisode from "../../rickEp.png";
@@ -37,7 +37,7 @@ export default function Carrousel({
             <img className="d-block w-100" src={pokeHome} alt="First slide" />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100" src={pokeDetail} alt="Third slide" />
+            <img className="d-block w-100" src={pokedetail} alt="Third slide" />
           </Carousel.Item>
         </Carousel>
       )}
