@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import style from "./Contact.module.css";
+import React, { useState, useRef, useEffect } from "react";
+import style from "./Contact.module.scss";
 import { validation } from "./validation";
 import {
   IconMail,
@@ -7,6 +7,7 @@ import {
   IconBrandLinkedin,
 } from "@tabler/icons-react";
 import emailjs from "emailjs-com";
+import Modal from "react-bootstrap/Modal";
 
 export default function Contact() {
   const [userData, setUserData] = useState({
@@ -29,8 +30,16 @@ export default function Contact() {
     });
   };
 
+  const [shouldAnimate, setShouldAnimate] = useState(false);
+  const skillsRef = useRef(null);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const handleInputChange = (event) => {
     setUserData({ ...userData, [event.target.name]: event.target.value });
+    setError(validation(userData));
   };
 
   const handleSubmit = (event) => {
@@ -53,44 +62,74 @@ export default function Contact() {
           }
         );
       stateReset();
+      handleShow();
     }
   };
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.2,
+    };
+
+    const handleIntersection = (entries) => {
+      const entry = entries[0];
+      if (entry.isIntersecting) {
+        setShouldAnimate(true);
+      } else {
+        setShouldAnimate(false);
+      }
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, options);
+
+    if (skillsRef.current) {
+      observer.observe(skillsRef.current);
+    }
+
+    return () => {
+      if (skillsRef.current) {
+        observer.unobserve(skillsRef.current);
+      }
+    };
+  }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setShow(false);
+    }, 8000);
+  }, [show]);
+
   return (
-    <section id="contact" style={{ height: "145.5vh" }}>
+    <section ref={skillsRef} id="contact" style={{ height: "151.2vh" }}>
       <div className={style.cntnContact}>
         <div className={style.backgroundTittle}>
           <p className={style.title}>CONTACT</p>
         </div>
         <div className={style.container}>
-          <div className={style.phrase}>
-            <span>/ CONTACT ME</span>
-            <span>/ CONTACT ME</span>
-            <span>/ CONTACT ME</span>
-            <span>/ CONTACT ME</span>
-            <span>/ CONTACT ME</span>
-            <span>/ CONTACT ME</span>
-            <span>/ CONTACT ME</span>
-            <span>/ CONTACT ME</span>
-            <span>/ CONTACT ME</span>
-            <span>/ CONTACT ME</span>
-            <span>/ CONTACT ME</span>
-            <span>/ CONTACT ME</span>
-            <span>/ CONTACT ME</span>
-            <span>/ CONTACT ME</span>
-            <span>/ CONTACT ME</span>
+          <div
+            className={
+              style.phrase + (shouldAnimate ? ` ${style.animate}` : "")
+            }
+          >
+            <span> CONTACT ME/</span>
+            <span> CONTACT ME/</span>
+            <span> CONTACT ME/</span>
+            <span> CONTACT ME/</span>
+            <span> CONTACT ME/</span>
+            <span> CONTACT ME/</span>
+            <span> CONTACT ME/</span>
+            <span> CONTACT ME/</span>
+            <span> CONTACT ME/</span>
+            <span> CONTACT ME/</span>
+            <span> CONTACT ME/</span>
+            <span> CONTACT ME/</span>
           </div>
         </div>
         <div className={style.backgroundImag}>
           <div className={style.cardContact}>
             <form onSubmit={handleSubmit} className={style.cntnForm}>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "start",
-                  flexDirection: "row",
-                  justifyContent: "start",
-                }}
-              >
+              <div className={style.divIcons}>
                 <div className={style.iconLinkedin}>
                   <a
                     href="https://www.linkedin.com/in/milagros-rosales-71a835284/"
@@ -180,6 +219,19 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+      >
+        <Modal.Header closeButton className={style.cntnModal}>
+          <Modal.Title>YOUR MESSAGE WAS SENT</Modal.Title>
+        </Modal.Header>
+        <Modal.Body className={style.bodyModal}>
+          I will contact you soon, thanks for contacting me!
+        </Modal.Body>
+      </Modal>
     </section>
   );
 }

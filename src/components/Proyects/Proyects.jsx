@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import style from "./Proyects.module.css";
+import style from "./Proyects.module.scss";
 import pokeLanding from "../../poke.png";
 import rickLanding from "../../rick-landing.png";
 import laptop from "../../laptop.png";
@@ -16,6 +16,7 @@ export default function Proyects() {
 
   const [showCarouselPokemon, setShowCarouselPokemon] = useState(false);
   const [showCarouselRick, setShowCarouselRick] = useState(false);
+
   const handleClose = () => {
     setShowCarouselPokemon(false);
     setShowCarouselRick(false);
@@ -52,28 +53,21 @@ export default function Proyects() {
   }, [photosPoke]);
 
   return (
-    <section id="proyects" style={{ height: "239.5vh" }}>
+    <section id="proyects">
       <div className={style.cntnProyects}>
         <div className={style.backgroundTittle}>
           <p className={style.title}>PROYECTS</p>
         </div>
         <div className={style.container}>
           <div className={style.phrase}>
-            <span>/ HEY CHECK OUT MY PROJECTS</span>
-            <span>/ HEY CHECK OUT MY PROJECTS</span>
-            <span>/ HEY CHECK OUT MY PROJECTS</span>
-            <span>/ HEY CHECK OUT MY PROJECTS</span>
-            <span>/ HEY CHECK OUT MY PROJECTS</span>
-            <span>/ HEY CHECK OUT MY PROJECTS</span>
-            <span>/ HEY CHECK OUT MY PROJECTS</span>
-            <span>/ HEY CHECK OUT MY PROJECTS</span>
-            <span>/ HEY CHECK OUT MY PROJECTS</span>
-            <span>/ HEY CHECK OUT MY PROJECTS</span>
-            <span>/ HEY CHECK OUT MY PROJECTS</span>
-            <span>/ HEY CHECK OUT MY PROJECTS</span>
-            <span>/ HEY CHECK OUT MY PROJECTS</span>
-            <span>/ HEY CHECK OUT MY PROJECTS</span>
-            <span>/ HEY CHECK OUT MY PROJECTS</span>
+            <span className={style.animate}> HEY CHECK OUT MY PROJECTS/</span>
+            <span className={style.animate}> HEY CHECK OUT MY PROJECTS/</span>
+            <span className={style.animate}> HEY CHECK OUT MY PROJECTS/</span>
+            <span className={style.animate}> HEY CHECK OUT MY PROJECTS/</span>
+            <span className={style.animate}> HEY CHECK OUT MY PROJECTS/</span>
+            <span className={style.animate}> HEY CHECK OUT MY PROJECTS/</span>
+            <span className={style.animate}> HEY CHECK OUT MY PROJECTS/</span>
+            <span className={style.animate}> HEY CHECK OUT MY PROJECTS/</span>
           </div>
         </div>
 
@@ -87,23 +81,27 @@ export default function Proyects() {
             </div>
 
             <div className={style.ctnTextRick}>
-              <p className={style.p}>
-                <strong> RICK & MORTY API</strong>
-              </p>
+              <div className={style.cntnTitleProyect}>
+                <p className={style.p}>
+                  <strong> RICK & MORTY API</strong>
+                </p>
+              </div>
 
               <p className={style.textProyect}>
-                My Integrator project is a SPA that uses React for the Front End
-                and Redux as state management. All components were developed
-                with CSS without the use of external libraries. <br />
-                The SPA consumes data from an API ("The Rick and Morty API")
-                through a Back-End developed in Node.JS using Express, adding
-                new features to the original API. <br />
-                The user can search for a character, filter by gender, sort
-                alphabetically and add to favorites.
+                "Rick & Morty API is my integrator project completed during
+                Henry's bootcamp.
+                <br /> It is a Single Page Application (SPA) that uses React for
+                the frontend and Redux for state management. All components were
+                developed using CSS without the use of external libraries.
+                <br /> The SPA consumes data from an API called 'The Rick and
+                Morty API' through a backend developed in Node.js using Express.
+                <br />
+                Users can search for a character, filter by gender, sort
+                alphabetically, and add characters to their favorites."
               </p>
 
               <div className={style.ctnButtonsRick}>
-                <button className={style.button}>
+                <div className={style.button}>
                   <a
                     href="https://github.com/Miliros/RICK-AND-MORTY"
                     target="_blank"
@@ -112,7 +110,7 @@ export default function Proyects() {
                   >
                     Code
                   </a>
-                </button>
+                </div>
                 <button
                   onClick={() => setShowCarouselRick(true)}
                   className={style.buttonPhoto}
@@ -123,28 +121,30 @@ export default function Proyects() {
             </div>
           </div>
 
-          <div className={style.lineO}>
+          <div className={style.lineT}>
             <div className={style.ctnTextRick}>
-              <p className={style.p}>
-                <strong>POKE API</strong>
-              </p>
-
+              <div className={style.cntnTitleProyect}>
+                <p className={style.p}>
+                  <strong>POKE API</strong>
+                </p>
+              </div>
               <p className={style.textProyect}>
-                It is a SPA that is built using technologies like React and
-                Redux in the Frontend for efficient state management, and CSS
-                modules.
-                <br /> The SPA consumes data from the external api (“Poke API”)
-                and communicates with a Back End developed in Node.js using
-                Express to handle client requests.
-                <br /> The application uses Sequelize to interact with a
-                PostgreSQL database.
-                <br /> The user can create a Pokémon, search for it by name,
-                filter it by type and strength, as well as sort it
-                alphabetically.
+                "Pokemon API is my individual project developed during Henry's
+                bootcamp. It is a Single Page Application (SPA) built using
+                technologies like React and Redux in the frontend for efficient
+                state management, and CSS modules for styling.
+                <br />
+                The SPA consumes data from an external API called 'Poke API' and
+                communicates with a backend developed in Node.js using Express
+                to handle client requests. The application uses Sequelize to
+                interact with a PostgreSQL database.
+                <br />
+                Users can create a Pokémon, search for it by name, filter it by
+                type and strength, and also sort it alphabetically."
               </p>
 
               <div className={style.ctnButtonsRick}>
-                <button className={style.button}>
+                <div className={style.button}>
                   <a
                     href="https://github.com/Miliros/PI-POKEMON"
                     target="_blank"
@@ -153,7 +153,7 @@ export default function Proyects() {
                   >
                     Code
                   </a>
-                </button>
+                </div>
                 <button
                   onClick={() => setShowCarouselPokemon(true)}
                   className={style.buttonPhoto}

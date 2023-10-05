@@ -1,0 +1,196 @@
+@import "../variables.scss";
+
+.cntnSkills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cntn {
+  background-image: url(../../fondosk.jpg);
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: 0% 0%;
+  background-attachment: fixed;
+}
+.backgroundImage {
+  border-top: 1px solid black;
+  width: 100%;
+  height: 205px;
+  background-image: url(../../walpaper.jpg);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  @include small {
+    height: 150px;
+  }
+  @include verySmall2 {
+    height: 150px;
+  }
+  @include verySmall {
+    height: 150px;
+  }
+}
+
+.divSkills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 37px;
+  height: 300px;
+  @include small {
+    margin-top: 58px;
+  }
+  @include verySmall2 {
+    margin-top: 56px;
+  }
+  @include verySmall {
+    margin-top: 55px;
+  }
+}
+.container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  border-top: 1px solid black;
+  background-color: #ebe9e2;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+.phrase {
+  margin: 1px;
+  font-family: satoshi;
+  font-size: 14px;
+  font-weight: 500;
+
+  white-space: nowrap;
+  @include verySmall2 {
+    font-size: 10px;
+  }
+  @include verySmall {
+    font-size: 10px;
+  }
+}
+
+.title {
+  font-size: 35px;
+  text-align: center;
+  line-height: 0px;
+  letter-spacing: 3px;
+  font-family: the seasons;
+  margin: 0px;
+  @include verySmall2 {
+    font-size: 17px;
+  }
+  @include verySmall {
+    font-size: 17px;
+  }
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebe9e2ea;
+  padding: 25px;
+  border: 1px solid black;
+  width: 106px;
+  height: 107px;
+  margin: 18px;
+  @include SmalIntermediate {
+    padding: 14px;
+    margin: 10px;
+    width: 87px;
+    height: 82px;
+  }
+  @include small {
+    padding: 10px;
+    margin: 9px;
+    width: 79px;
+    height: 72px;
+  }
+  @include verySmall2 {
+    padding: 10px;
+    margin: 9px;
+    width: 69px;
+    height: 72px;
+  }
+  @include verySmall {
+    padding: 10px;
+    margin: 5px;
+    width: 69px;
+    height: 72px;
+  }
+}
+.icons.animate {
+  animation: scale-up-horizontal-center 0.9s;
+}
+
+@keyframes scale-up-horizontal-center {
+  0% {
+    transform: scaleX(0.2);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.animate2 {
+  animation: moveLeft linear infinite 45s; /* Utiliza la animación "moveLeft" */
+  animation-delay: 0s; /* Retrasa el inicio de la animación en 0 segundos */
+  animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(100%); /* Comienza desde la derecha de la pantalla */
+  }
+  100% {
+    transform: translateX(-100%); /* Termina en la izquierda de la pantalla */
+  }
+}
+.imgLogo {
+  display: flex;
+  height: 25px;
+}
+
+.pIcon {
+  justify-content: center;
+  /* display: flex; */
+  font-size: 17px;
+  margin: 0px;
+  padding: 0px;
+  font-family: satoshi;
+  @include small {
+    font-size: 13px;
+  }
+  @include verySmall2 {
+    font-size: 13px;
+  }
+  @include verySmall {
+    font-size: 12px;
+  }
+}
+
+.lineOne {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @include small {
+    display: grid;
+    grid-template-columns: 94px 94px 94px;
+  }
+
+  @include verySmall2 {
+    display: grid;
+    grid-template-columns: 94px 94px 94px;
+  }
+  @include verySmall {
+    display: grid;
+    grid-template-columns: 92px 92px 92px;
+  }
+}

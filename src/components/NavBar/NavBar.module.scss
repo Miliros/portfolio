@@ -1,0 +1,93 @@
+@import "../variables.scss";
+
+.p {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  margin-left: 16px;
+  margin-right: 16px;
+  font-family: satoshi;
+  font-size: 16px;
+  @include verySmall2 {
+    font-size: 14px;
+  }
+}
+.p:hover {
+  font-weight: 500;
+  transform: scale(1.05);
+}
+.nav {
+  padding: 13px !important;
+}
+.navOne {
+  padding: 15px !important;
+  background-color: #ebe9e2 !important;
+  border-bottom: 1px solid black;
+}
+
+.brand {
+  font-family: "Cinzel" decorative !important;
+  font-size: 16px !important;
+  color: white !important;
+  background-color: black;
+  padding: 6px;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 4px;
+  @include verySmall {
+    font-size: 13px !important;
+  }
+  @include small {
+    font-size: 14px !important;
+  }
+  @include SmalIntermediate {
+    font-size: 15px !important;
+  }
+}
+
+.buttonResponsive {
+  color: #a3a095;
+  height: 35px !important;
+  font-size: 12px !important;
+  border-radius: 4px;
+  padding: 6px;
+
+  @include verySmall {
+    height: 20px;
+    width: 40px;
+    order: -1;
+  }
+  @include small {
+    height: 30px;
+    width: 40px;
+    order: -1;
+  }
+  @include SmalIntermediate {
+    height: 30px;
+    width: 40px;
+    order: -1;
+  }
+}
+
+.active {
+  margin-top: 8px;
+  padding: 4px;
+
+  .p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: start;
+    padding: 2px;
+    margin: 0px;
+
+    .p:hover {
+      cursor: pointer;
+      font-weight: 0 !important;
+      transform: scale(0) !important;
+    }
+  }
+}

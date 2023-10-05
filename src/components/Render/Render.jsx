@@ -12,6 +12,7 @@ export default function Render() {
       <Home />
       <Proyects />
       <Skills />
+
       <Contact />
       <Footer />
     </div>

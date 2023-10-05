@@ -1,0 +1,30 @@
+@font-face {
+    font-family: valentino;
+    src: url(valentino.otf);
+  }
+  @font-face {
+    font-family: satoshi;
+    src: url(Satoshi-Variable.ttf);
+  }
+  @font-face {
+    font-family: the seasons;
+    src: url(Fontspring-DEMO-theseasons-reg.otf);
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Forum", cursive !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px !important;
+    background-color: #ebe9e2 !important;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Forum&family=Libre+Franklin:ital,wght@0,100;1,300&family=Montserrat:ital,wght@0,700;1,400&family=Plus+Jakarta+Sans:wght@200&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Forum&family=Libre+Franklin:ital,wght@0,100;1,300&family=Montserrat:ital,wght@0,700;1,400&family=Plus+Jakarta+Sans:wght@200&display=swap");
+  

@@ -1,0 +1,371 @@
+@import "../variables.scss";
+
+.cntnProyects {
+  margin-top: -40px;
+  padding-top: 25px;
+}
+
+.title {
+  font-size: 35px;
+  text-align: center;
+  line-height: 0px;
+  letter-spacing: 3px;
+  font-family: the seasons;
+  margin: 0px;
+  @include verySmall {
+    font-size: 24px;
+  }
+}
+.p {
+  font-size: 32px;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: start;
+  font-family: valentino;
+  padding-left: 60px;
+  padding-right: 60px;
+  @include SmalIntermediate {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 27px;
+  }
+  @include small {
+    padding-left: 21px;
+    padding-right: 20px;
+    font-size: 26px;
+  }
+  @include verySmall2 {
+    margin-top: 16px;
+
+    font-size: 25px;
+    text-align: center;
+  }
+  @include verySmall {
+    // margin-top: 16px;
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.cntnTittle {
+  margin-top: 100px;
+  margin: 15px;
+  @include small {
+    margin-top: 15px;
+    margin: 5px;
+  }
+}
+
+.lineO {
+  display: flex;
+  border-top: 1px solid black;
+  flex-direction: row;
+  height: 100vh;
+
+  @include verySmall {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+}
+.lineT {
+  display: flex;
+  border-top: 1px solid black;
+  flex-direction: row;
+  height: 100vh;
+  @include verySmall {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+  }
+}
+.ctnMacRick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-right: 1px solid black;
+  height: 100%;
+  background-image: url("../../backPropro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include verySmall {
+    width: 100%;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+}
+.ctnMacPoke {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-left: 1px solid black;
+  height: 100%;
+  background-image: url("../../backPropro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border-bottom: 1px solid black; */
+  @include verySmall {
+    width: 100%;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+}
+
+.ctnTextRick {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @include verySmall {
+    align-items: center;
+  }
+}
+
+.lines {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor {
+  position: relative;
+}
+.img {
+  max-width: 376px;
+  width: 376px;
+  object-fit: scale-down;
+  @include SmalIntermediate {
+    width: 225px;
+  }
+  @include small {
+    width: 185px;
+  }
+  @include verySmall2 {
+    width: 185px;
+  }
+  @include verySmall {
+    width: 178px;
+  }
+}
+
+.imgIpad {
+  width: 490px;
+  position: absolute;
+  top: -17px;
+  right: 0;
+  left: -61px;
+  @include SmalIntermediate {
+    width: 284px;
+    left: -28px;
+    top: -6px;
+  }
+
+  @include small {
+    width: 244px;
+    left: -29px;
+    top: -6px;
+  }
+  @include verySmall2 {
+    width: 240px;
+    left: -30px;
+    top: -8px;
+  }
+  @include verySmall {
+    width: 230px;
+    left: -24px;
+    top: -6px;
+  }
+}
+.textProyect {
+  text-align: start;
+  font-family: satoshi;
+  font-size: 14px;
+  padding-left: 60px;
+  padding-right: 60px;
+  max-width: 600px;
+  line-height: 25.8px;
+
+  @include SmalIntermediate {
+    font-family: satoshi;
+    font-size: 12px;
+    padding: 2px;
+    line-height: 17px;
+    max-width: 810px;
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @include small {
+    font-family: satoshi;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0px;
+    padding-left: 20px;
+  }
+  @include verySmall2 {
+    font-family: satoshi;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0px;
+  }
+  @include verySmall {
+    font-family: satoshi;
+    font-size: 14px;
+    line-height: 17px;
+    width: 300px;
+    // line-height: 12px;
+    margin-bottom: 30px;
+  }
+  @include veryverySmall1 {
+    font-size: 13px;
+  }
+}
+
+.backgroundTittle {
+  background-image: url("../../walpaper.jpg");
+  width: 100%;
+  height: 205px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  @include verySmall {
+    height: 130px;
+  }
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 16px;
+}
+.container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  border-top: 1px solid black;
+  background-color: #ebe9e2;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+.phrase {
+  margin: 1px;
+  font-family: satoshi;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  animation: moveLeft linear infinite 45s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  @include verySmall {
+    font-size: 10px;
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(100%); /* Comienza desde la derecha de la pantalla */
+  }
+  100% {
+    transform: translateX(-100%); /* Termina en la izquierda de la pantalla */
+  }
+}
+
+.lineTt {
+  width: 100%;
+  height: 5px;
+  border-top: 1px solid black;
+}
+.lineTtt {
+  height: 49vh;
+  width: 100%;
+  height: 5px;
+  border-top: 1px solid black;
+}
+
+.ctnButtonsRick {
+  display: flex;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 25px;
+
+  @include SmalIntermediate {
+    padding-left: 20px;
+  }
+  @include verySmall {
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+}
+
+.button {
+  display: flex;
+  margin-right: 20px;
+  width: 68px;
+  height: 36px;
+  font-size: 12px;
+  background-color: #ebe9e2;
+  font-family: satoshi;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  @include small {
+    font-size: 8px;
+  }
+  @include verySmall2 {
+    font-size: 7px;
+    width: 60px;
+    height: 28px;
+  }
+  @include verySmall {
+    font-size: 7px;
+    width: 60px;
+    height: 28px;
+  }
+}
+.button:hover {
+  background-color: #b1ada2a9;
+  font-weight: 600;
+  border: none;
+}
+.buttonPhoto {
+  margin-right: 20px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  width: 68px;
+  height: 36px;
+  font-family: satoshi;
+  border: 1px solid black;
+  @include small {
+    font-size: 8px;
+  }
+  @include verySmall2 {
+    font-size: 7px;
+    width: 60px;
+    height: 28px;
+  }
+  @include verySmall {
+    font-size: 7px;
+    width: 60px;
+    height: 28px;
+  }
+}
+.buttonPhoto:hover {
+  background-color: #b1ada2a9;
+  color: black;
+  font-weight: 600;
+  border: none;
+}
+.a {
+  text-decoration: none;
+  color: black;
+}

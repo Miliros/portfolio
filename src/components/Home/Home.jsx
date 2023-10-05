@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./Home.module.css";
-import image from "../../supuesta.jpg";
+import styles from "./Home.module.scss";
+import image from "../../mili2.jpeg";
 import {
   IconBrandInstagram,
   IconBrandFacebook,
@@ -13,26 +13,12 @@ export default function Home() {
   return (
     <section
       style={{
-        display: "flex",
-        justifyContent: "center",
-        paddingTop: "125px",
         height: "100vh",
-        border: "1px solid black",
-        borderRadius: "7px",
-        marginBottom: "15px",
       }}
       id="home"
+      className={styles.cntnHome}
     >
-      <div
-        style={{
-          position: "absolute",
-          bottom: "53px",
-          left: "44px",
-          display: "flex",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
+      <div className={styles.divIcons}>
         <div className={styles.icon}>
           <a
             href="https://www.linkedin.com/in/milagros-rosales-71a835284/"
@@ -75,24 +61,30 @@ export default function Home() {
           </a>
         </div>
       </div>
-
-      <div style={{ marginRight: "80px" }}>
-        <p className={styles.name}>Milagros</p>
-        <p className={styles.lastName}>Rosales</p>
-        <p className={styles.p}>
-          Hi, I'm Milagros.
-          <br /> I am a <strong>Full Stack Developer</strong> focused on front
-          end development born in Tandil, Argentina. <br />
-          {/* I am looking for opportunities to enhance my skills and achieve
-          professional success. I stand out for being empathetic, decisive and
-          creative in each project. <br /> */}
-          <br />
-        </p>
-        <p className={styles.pWelcome}>Welcome to my Portfolio!</p>
-      </div>
-
-      <div style={{ marginLeft: "80px" }}>
-        <img className={styles.img} src={image} />
+      <div className={styles.divNameImg}>
+        <div className={styles.nameAndSubtitle}>
+          <div className={styles.names}>
+            <div>
+              <p className={styles.name}>Milagros</p>
+            </div>
+            <div>
+              <p className={styles.lastName}>Rosales</p>
+            </div>
+          </div>
+          <div className={styles.cntnP}>
+            <div className={styles.centeredText}>
+              <p className={styles.p}>Hi, I'm Milagros.</p>
+            </div>
+            <p className={styles.p2}>
+              I am a <strong>Full Stack Developer</strong> with a focus on
+              front-end development, born in Tandil, Argentina. <br />
+              <br />
+            </p>
+          </div>
+        </div>
+        <div className={styles.divImg}>
+          <img className={styles.img} src={image} />
+        </div>
       </div>
     </section>
   );

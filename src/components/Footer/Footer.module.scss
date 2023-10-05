@@ -1,0 +1,251 @@
+@import "../variables.scss";
+
+.cntnFo {
+  height: 46vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.932);
+  @include small {
+    height: 68vh;
+  }
+  @include verySmall2 {
+    height: 68vh;
+  }
+  @include verySmall {
+    height: 55vh;
+  }
+}
+.ctnFooter {
+  /* height: 30%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px;
+  padding-left: 43px;
+  padding-right: 43px;
+  @include small {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @include verySmall2 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @include verySmall {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.p {
+  font-family: valentino;
+  display: flex;
+  font-size: 25px;
+  color: #ebe9e2;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2px;
+  /* padding: 10px; */
+  @include verySmall2 {
+    font-size: 18px;
+    align-items: start;
+  }
+  @include verySmall {
+    font-size: 18px;
+    align-items: start;
+  }
+}
+.divConnect {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  margin-left: 14px;
+  margin-right: 14px;
+  width: 38%;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.39);
+  @include SmalIntermediate {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 35%;
+  }
+  @include small {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 32%;
+  }
+  @include verySmall2 {
+    width: 180px;
+    margin-left: 1px;
+    margin-right: 4px;
+    margin-top: 70px;
+    justify-content: start;
+    align-items: start;
+  }
+  @include verySmall {
+    width: 28%;
+    margin-left: 1px;
+    margin-right: 4px;
+    margin-top: 70px;
+  }
+}
+.divExplore {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  margin-left: 14px;
+  margin-right: 14px;
+  width: 38%;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.39);
+  @include SmalIntermediate {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 35%;
+  }
+  @include small {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 32%;
+  }
+  @include verySmall2 {
+    width: 180px;
+    margin-left: 4px;
+    margin-right: 1px;
+    margin-top: 70px;
+    justify-content: start;
+    align-items: start;
+  }
+  @include verySmall {
+    width: 28%;
+    margin-left: 4px;
+    margin-right: 1px;
+    margin-top: 70px;
+  }
+}
+
+.iconLinkedin {
+  margin: 1px 3px 8px 3px;
+  @include verySmall2 {
+    margin: 1px 3px 8px 10px;
+  }
+  @include verySmall {
+    margin: 1px 3px 8px 0px;
+  }
+}
+.a {
+  color: #ebe9e2;
+  text-decoration: none;
+}
+.divpIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  @include verySmall2 {
+    width: 150px;
+    flex-direction: column;
+    align-items: start;
+  }
+  @include verySmall {
+    width: 150px;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.divIconsR {
+  display: flex;
+  flex-direction: row;
+  // @include verySmall {
+  //   flex-direction: column;
+  // }
+}
+.icon {
+  margin: 1px 7px 12px 7px;
+  justify-content: center;
+  cursor: pointer;
+  @include verySmall2 {
+    margin: 1px 3px 8px 3px;
+  }
+  @include verySmall {
+    margin: 1px 3px 13px 3px;
+  }
+}
+
+.brandMr {
+  justify-content: center;
+  align-items: center;
+  font-family: the seasons;
+  color: #ebe9e2;
+  font-size: 65px;
+  margin-top: 53px;
+
+  @include small {
+    font-size: 52px;
+  }
+  @include verySmall2 {
+    font-size: 48px;
+    margin-top: 43px;
+  }
+  @include verySmall {
+    font-size: 48px;
+    margin-top: 43px;
+  }
+}
+.divLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  @include verySmall2 {
+    flex-direction: column;
+    height: 118px;
+  }
+  @include verySmall {
+    flex-direction: column;
+    height: 118px;
+  }
+}
+.link {
+  margin-left: 7px;
+  margin-right: 7px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ebe9e2;
+  font-size: 14px;
+  cursor: pointer;
+  @include small {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+}
+
+.divCopy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: -15px; */
+}
+.pCopy {
+  color: #ebe9e2;
+  font-size: 13px;
+  margin: 0px;
+  padding: 0px;
+  font-family: satoshi;
+  @include verySmall2 {
+    font-size: 11px;
+  }
+  @include verySmall {
+    font-size: 11px;
+  }
+}
+.divFotter {
+  padding-bottom: 6px;
+  margin: 0px;
+  @include verySmall2 {
+    padding-bottom: 4px;
+  }
+  @include verySmall {
+    padding-bottom: 3px;
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Footer.module.css";
+import style from "./Footer.module.scss";
 import {
   IconMail,
   IconBrandGithub,
@@ -8,20 +8,16 @@ import {
   IconBrandInstagram,
 } from "@tabler/icons-react";
 import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 
 export default function Footer() {
   return (
     <div className={style.cntnFo}>
       <div className={style.ctnFooter}>
         <div className={style.divConnect}>
+          <p className={style.p}>Stay Connected!</p>
           <div className={style.divpIcons}>
-            <p className={style.p}>Stay Connected!</p>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-              }}
-            >
+            <div className={style.divIconsR}>
               <div className={style.iconLinkedin}>
                 <a
                   href="https://www.linkedin.com/in/milagros-rosales-71a835284/"
@@ -80,53 +76,38 @@ export default function Footer() {
           <p>MR</p>
         </div>
         <div className={style.divExplore}>
-          <div className={style.divpSessions}>
-            <p className={style.p}>Explore</p>
-            <div className={style.divLinks}>
-              <div>
-                <Link
-                  to="home"
-                  smooth={true}
-                  duration={500}
-                  className={style.pExplore}
-                >
-                  Home
-                </Link>
-              </div>
-              <div>
-                <Link
-                  to="proyects"
-                  smooth={true}
-                  duration={500}
-                  className={style.pExplore}
-                >
-                  Proyects
-                </Link>
-              </div>
-              <div>
-                <Link
-                  to="skills"
-                  smooth={true}
-                  duration={500}
-                  className={style.pExplore}
-                >
-                  Skills
-                </Link>
-              </div>
-              <div>
-                <Link
-                  to="contact"
-                  smooth={true}
-                  duration={500}
-                  className={style.pExplore}
-                >
-                  Contact me
-                </Link>
-              </div>
-              <div>
-                <Link className={style.pExplore}>CV</Link>
-              </div>
-            </div>
+          <p className={style.p}>Explore</p>
+          <div className={style.divLinks}>
+            <Link to="home" smooth={true} duration={500} className={style.link}>
+              Home
+            </Link>
+            <Link
+              to="proyects"
+              smooth={true}
+              duration={500}
+              className={style.link}
+            >
+              Proyects
+            </Link>
+            <Link
+              to="skills"
+              smooth={true}
+              duration={500}
+              className={style.link}
+            >
+              Skills
+            </Link>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className={style.link}
+            >
+              Contact
+            </Link>
+            <NavLink to="/pdf" target="_blank" className={style.link}>
+              CV
+            </NavLink>
           </div>
         </div>
       </div>
@@ -134,7 +115,7 @@ export default function Footer() {
         <div className={style.divFotter}>
           <p className={style.pCopy}>
             &copy; {new Date().getFullYear()} Milagros Rosales. All Rights
-            Reserved.
+            Reserved. Site Credit.
           </p>
         </div>
       </div>
