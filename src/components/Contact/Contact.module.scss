@@ -24,10 +24,10 @@
   margin: 0px;
   font-family: the seasons;
   @include verySmall2 {
-    font-size: 18px;
+    font-size: 24px;
   }
   @include verySmall {
-    font-size: 17px;
+    font-size: 24px;
   }
 }
 .container {
@@ -312,10 +312,12 @@
   font-family: valentino;
   font-size: 38px;
   @include verySmall2 {
-    font-size: 30px;
+    font-size: 26px;
+    font-weight: 800;
   }
   @include verySmall {
-    font-size: 30px;
+    font-size: 26px;
+    font-weight: 800;
   }
 }
 .icon {
