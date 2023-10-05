@@ -12,6 +12,18 @@
   background-size: cover;
   background-position: 0% 0%;
   background-attachment: fixed;
+  @include verySmall2 {
+    background-image: url(../../fondosk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: unset;
+  }
+  @include verySmall {
+    background-image: url(../../fondosk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: unset;
+  }
 }
 .backgroundImage {
   border-top: 1px solid black;

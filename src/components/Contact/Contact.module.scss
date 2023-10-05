@@ -23,6 +23,9 @@
   letter-spacing: 0px;
   margin: 0px;
   font-family: the seasons;
+  @include verySmall2 {
+    font-size: 18px;
+  }
   @include verySmall {
     font-size: 17px;
   }
@@ -86,22 +89,34 @@
   @include small {
     height: 115.6vh;
   }
+
   @include verySmall2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: unset;
     height: 110vh;
   }
   @include verySmall {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: unset;
     height: 128.2vh;
   }
   @include veryverySmall1 {
-    height: 100vh;
+    height: 128vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: unset;
   }
   @include veryverySmall {
     height: 128.2vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: unset;
   }
 }
 .cardContact {
   background-color: #ebe9e2;
-  /* height: 89vh; */
   width: 33%;
   border: 1px solid black;
   display: flex;
@@ -110,36 +125,40 @@
   align-items: center;
   padding: 34px;
   @include largeIntermediate {
+    width: 40%;
     max-height: 100vh;
   }
   @include SmalIntermediate {
-    width: 295px;
+    width: 330px;
     padding: 31px;
     max-height: 100vh;
   }
   @include small {
-    width: 280px;
+    width: 325px;
     padding: 29px;
     max-height: 100vh;
   }
   @include verySmall2 {
-    width: 270px;
+    width: 298px;
     padding: 26px;
   }
   @include verySmall {
-    width: 250px;
+    width: 270px;
     padding: 25px;
   }
 }
 .cntnForm {
+  @include largeIntermediate {
+    width: 300px;
+  }
   @include SmalIntermediate {
-    width: 250px;
+    width: 196px;
   }
   @include small {
-    width: 240px;
+    width: 186px;
   }
   @include verySmall2 {
-    width: 226px;
+    width: 163px;
   }
   @include verySmall {
     width: 160px;
@@ -169,12 +188,24 @@
   }
   @include small {
     width: 220px;
+    border-top: 1px solid #ebe9e2;
+    border-left: 1px solid #ebe9e2;
+    border-right: 1px solid #ebe9e2;
+    font-weight: 800;
   }
   @include verySmall2 {
     width: 180px;
+    border-top: 1px solid #ebe9e2;
+    border-left: 1px solid #ebe9e2;
+    border-right: 1px solid #ebe9e2;
+    font-weight: 800;
   }
   @include verySmall {
-    width: 150px;
+    width: 160px;
+    border-top: 1px solid #ebe9e2;
+    border-left: 1px solid #ebe9e2;
+    border-right: 1px solid #ebe9e2;
+    font-weight: 800;
   }
 }
 
@@ -226,17 +257,21 @@
   overflow-y: hidden;
   font-size: 13px;
   font-weight: 600;
+  margin-bottom: 0px;
   @include SmalIntermediate {
     width: 220px;
   }
   @include small {
     width: 220px;
+    font-weight: 800;
   }
   @include verySmall2 {
     width: 200px;
+    font-weight: 800;
   }
   @include verySmall {
-    width: 180px;
+    width: 160px;
+    font-weight: 800;
   }
 }
 .pError {
@@ -245,6 +280,18 @@
   font-size: 15px;
   margin: 0px;
   height: 5px;
+  @include small {
+    font-size: 12px;
+    height: 0px;
+  }
+  @include verySmall2 {
+    font-size: 12px;
+    height: 0px;
+  }
+  @include verySmall {
+    font-size: 12px;
+    height: 0px;
+  }
 }
 .inputsAndlabels {
   justify-content: center;
@@ -294,6 +341,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include verySmall2 {
+    width: 240px;
+  }
+  @include verySmall {
+    width: 240px;
+  }
 }
 .bodyModal {
   font-family: satoshi;
