@@ -6,6 +6,7 @@ import rickLanding from "../../RickLanding.png";
 import rickHome from "../../rickHome.png";
 import rickEpisode from "../../rickEp.png";
 import rickFav from "../../rickFav.png";
+//images
 
 import pokeHomeOriginal from "../../pokeHomeOriginal.png";
 
