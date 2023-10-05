@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import pokeHome from "../../PokeHome2.png";
+import pokeHome from "../../PokeHomet.png";
 import pokeDetail from "../../PokeDetail.png";
 import rickLanding from "../../RickLanding.png";
 import rickHome from "../../rickHome.png";
