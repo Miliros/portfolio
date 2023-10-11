@@ -51,9 +51,9 @@ export default function Skills() {
     <section ref={skillsRef} id="skills" className={style.cntn}>
       <div
         className={style.ctnSkills}
-        style={{
-          height: "100vh",
-        }}
+        // style={{
+        //   height: "100vh",
+        // }}
       >
         <div className={style.container}>
           <div

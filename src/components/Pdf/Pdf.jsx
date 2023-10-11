@@ -1,5 +1,5 @@
 import React from "react";
-import cv from "./MilagrosRosalesCV.pdf";
+import cv from "./Milagros Rosales C.V.pdf";
 
 export default function Pdf() {
   return (

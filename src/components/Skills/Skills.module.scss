@@ -53,13 +53,13 @@
   margin-top: 37px;
   height: 300px;
   @include small {
-    margin-top: 58px;
+    margin-top: 0px;
   }
   @include verySmall2 {
-    margin-top: 56px;
+    margin-top: 0px;
   }
   @include verySmall {
-    margin-top: 55px;
+    margin-top: 0px;
   }
 }
 .container {
@@ -121,21 +121,21 @@
   }
   @include small {
     padding: 10px;
-    margin: 9px;
-    width: 79px;
-    height: 72px;
+    margin: 5px;
+    width: 68px;
+    height: 64px;
   }
   @include verySmall2 {
     padding: 10px;
-    margin: 9px;
-    width: 69px;
-    height: 72px;
+    margin: 5px;
+    width: 68px;
+    height: 64px;
   }
   @include verySmall {
     padding: 10px;
     margin: 5px;
-    width: 69px;
-    height: 72px;
+    width: 68px;
+    height: 64px;
   }
 }
 .icons.animate {
@@ -194,15 +194,15 @@
   align-items: center;
   @include small {
     display: grid;
-    grid-template-columns: 94px 94px 94px;
+    grid-template-columns: 86px 86px 86px;
   }
 
   @include verySmall2 {
     display: grid;
-    grid-template-columns: 94px 94px 94px;
+    grid-template-columns: 86px 86px 86px;
   }
   @include verySmall {
     display: grid;
-    grid-template-columns: 92px 92px 92px;
+    grid-template-columns: 86px 86px 86px;
   }
 }
