@@ -44,6 +44,7 @@
     // margin-top: 16px;
     font-size: 24px;
     text-align: center;
+    width: 200px;
   }
 }
 
@@ -321,12 +322,12 @@
     font-size: 8px;
   }
   @include verySmall2 {
-    font-size: 7px;
+    font-size: 10px;
     width: 60px;
     height: 28px;
   }
   @include verySmall {
-    font-size: 7px;
+    font-size: 10px;
     width: 60px;
     height: 28px;
   }
@@ -349,12 +350,12 @@
     font-size: 8px;
   }
   @include verySmall2 {
-    font-size: 7px;
+    font-size: 10px;
     width: 60px;
     height: 28px;
   }
   @include verySmall {
-    font-size: 7px;
+    font-size: 10px;
     width: 60px;
     height: 28px;
   }
