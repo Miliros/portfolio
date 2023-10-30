@@ -6,6 +6,12 @@ import rickLanding from "../../RickLanding.png";
 import rickHome from "../../rickHome.png";
 import rickEpisode from "../../rickEp.png";
 import rickFav from "../../rickFav.png";
+import mscLanding from "../../MscAmoblamientosLan.png";
+import mscHome from "../../HomeMSC.png";
+import mscCart from "../../mscCart.png";
+import mscRegister from "../../MSCregister.png";
+import mscReviews from "../../mscReviews.png";
+import mscSofa from "../../moreDetailMsc.png";
 //images
 
 import pokeHomeOriginal from "../../pokeHomeOriginal.png";
@@ -15,12 +21,13 @@ import Modal from "react-bootstrap/Modal";
 export default function Carrousel({
   showPokemonCarousel,
   showRickCarousel,
+  showMscCarousel,
   handleClose,
 }) {
   return (
     <Modal
       onHide={handleClose}
-      show={showPokemonCarousel || showRickCarousel}
+      show={showPokemonCarousel || showRickCarousel || showMscCarousel}
       size="xl"
       centered
     >
@@ -63,6 +70,37 @@ export default function Carrousel({
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={rickFav} alt="First slide" />
+          </Carousel.Item>
+        </Carousel>
+      )}
+
+      {showMscCarousel && (
+        <Carousel>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={mscLanding}
+              alt="Second slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={mscHome} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={mscCart} alt="Third slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={mscRegister}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={mscReviews} alt="Third slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={mscSofa} alt="Third slide" />
           </Carousel.Item>
         </Carousel>
       )}
