@@ -97,7 +97,7 @@ export default function Proyects() {
             <div className={style.ctnTextRick}>
               <div className={style.cntnTitleProyect}>
                 <p className={style.p}>
-                  <strong>MSC Furnishings</strong>
+                  <strong>MSC Amoblamientos</strong>
                 </p>
               </div>
               <p className={style.textProyect}>
