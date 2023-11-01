@@ -97,23 +97,21 @@ export default function Proyects() {
             <div className={style.ctnTextRick}>
               <div className={style.cntnTitleProyect}>
                 <p className={style.p}>
-                  <strong>MSC Amoblamientos</strong>
+                  <strong>MSC AMOBLAMIENTOS</strong>
                 </p>
               </div>
               <p className={style.textProyect}>
                 MSC API is a Full Stack group project developed during the Henry
                 program. It combines leading technologies to provide a unique
-                online furniture shopping experience.
-                <br />
-                On the frontend, uses React, Redux, and Bootstrap for a sleek
-                UI. The backend is powered by Express, managing a PostgreSQL
-                database with Sequelize.
+                online furniture shopping experience. On the frontend, uses
+                React, Redux, and Bootstrap for a sleek UI. The backend is
+                powered by Express, managing a PostgreSQL database with
+                Sequelize.
                 <br />
                 Auth0 ensures user security with various methods. Cloudinary
-                manages images. MSC API is a feature-rich e-commerce platform
-                for easy furniture search and purchase. Admins can oversee
-                products, materials, orders, and accounts through a robust
-                panel.
+                manages images. MSC is a feature-rich e-commerce platform for
+                easy furniture search and purchase. Admins can oversee products,
+                materials, orders, and accounts through a robust panel.
                 <br />
               </p>
 
