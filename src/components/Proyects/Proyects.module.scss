@@ -140,24 +140,34 @@
 }
 .img {
   max-width: 376px;
+  min-width: 376px;
+
   width: 376px;
   object-fit: scale-down;
   @include SmalIntermediate {
     width: 225px;
+    max-width: 225px;
+    min-width: 225px;
   }
   @include small {
     width: 185px;
+    max-width: 185px;
+    min-width: 185px;
   }
   @include verySmall2 {
     width: 185px;
+    max-width: 185px;
+    min-width: 185px;
   }
   @include verySmall {
     width: 178px;
+    max-width: 178px;
+    min-width: 178px;
   }
 }
 
 .imgIpad {
-  width: 490px;
+  width: 489px;
   position: absolute;
   top: -17px;
   right: 0;
