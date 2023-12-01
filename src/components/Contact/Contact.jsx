@@ -101,7 +101,7 @@ export default function Contact() {
   }, [show]);
 
   return (
-    <section ref={skillsRef} id="contact" style={{ height: "151.2vh" }}>
+    <section ref={skillsRef} id="contact">
       <div className={style.cntnContact}>
         <div className={style.backgroundTittle}>
           <p className={style.title}>CONTACT</p>

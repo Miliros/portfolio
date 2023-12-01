@@ -77,9 +77,9 @@
   align-items: center;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  // @include large {
-  //   height: 106vh;
-  // }
+  @include large {
+    height: 115vh;
+  }
   @include largeIntermediate {
     height: 115.5vh;
   }
@@ -94,22 +94,22 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: unset;
-    height: 110vh;
+    height: 112vh;
   }
   @include verySmall {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: unset;
-    height: 128.2vh;
+    height: 129vh;
   }
   @include veryverySmall1 {
-    height: 128vh;
+    height: 129vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: unset;
   }
   @include veryverySmall {
-    height: 128.2vh;
+    height: 129.2vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: unset;
