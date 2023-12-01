@@ -20,11 +20,13 @@
 }
 .nav {
   padding: 13px !important;
+  margin: 0px !important;
 }
 .navOne {
   // padding: 15px !important;
   background-color: #ebe9e2 !important;
   border-bottom: 1px solid black;
+  margin: 0px !important;
   padding: 13px !important;
 }
 
@@ -33,7 +35,9 @@
   font-size: 16px !important;
   color: white !important;
   background-color: black;
-  padding: 6px;
+  padding-right: 8.1px;
+  padding-left: 8.1px;
+
   justify-content: center !important;
   align-items: center !important;
   border-radius: 4px;
@@ -53,8 +57,8 @@
   height: 35px !important;
   font-size: 12px !important;
   border-radius: 4px;
-  padding: 6px;
-
+  padding-right: 8.1px;
+  padding-left: 8.1px;
   @include verySmall {
     height: 20px;
     width: 40px;
@@ -74,7 +78,9 @@
 
 .active {
   margin-top: 8px;
-  padding: 4px;
+  padding-top: 4px;
+  padding-right: 4px;
+  padding-left: 4px;
 
   .p {
     font-size: 12px;
@@ -87,8 +93,8 @@
 
     .p:hover {
       cursor: pointer;
-      font-weight: 0 !important;
-      transform: scale(0) !important;
+      // font-weight: 0 !important;
+      transform: none !important;
     }
   }
 }
