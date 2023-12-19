@@ -77,7 +77,7 @@ export default function Proyects() {
     <section id="proyects">
       <div className={style.cntnProyects}>
         <div className={style.backgroundTittle}>
-          <p className={style.title}>PROYECTS</p>
+          <p className={style.title}>PROJECTS</p>
         </div>
         <div className={style.container}>
           <div className={style.phrase}>
