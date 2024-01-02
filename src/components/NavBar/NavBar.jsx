@@ -45,7 +45,7 @@ export default function NavBar() {
               duration={500}
               className={styles.p}
             >
-              Proyects
+              Projects
             </Link>
 
             <Link to="skills" smooth={true} duration={500} className={styles.p}>
