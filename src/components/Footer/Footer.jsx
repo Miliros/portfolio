@@ -87,7 +87,7 @@ export default function Footer() {
               duration={500}
               className={style.link}
             >
-              Proyects
+              Projects
             </Link>
             <Link
               to="skills"
