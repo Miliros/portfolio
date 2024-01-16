@@ -9,6 +9,12 @@ import {
   IconBrandBootstrap,
   IconBrandSass,
   IconBrandGit,
+  IconBrandNextjs,
+  IconBrandTypescript,
+  IconBrandTailwind,
+  IconBrandGithub,
+  IconBrandDocker,
+  IconBrandWordpress
 } from "@tabler/icons-react";
 import logoSql from "../../logoSql.png";
 import logoExpress from "../../logoExpress.png";
@@ -131,6 +137,30 @@ export default function Skills() {
               <IconBrandGit size="36px" stroke="1.4px" />
               <p className={style.pIcon}>Git</p>
             </div>
+            <div
+              className={
+                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
+              }
+            >
+              <IconBrandNextjs size="36px" stroke="1.4px" />
+              <p className={style.pIcon}>Next.js</p>
+            </div>
+            <div
+              className={
+                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
+              }
+            >
+              <IconBrandTailwind size="36px" stroke="1.4px" />
+              <p className={style.pIcon}>Tailwind </p>
+            </div>
+            <div
+              className={
+                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
+              }
+            >
+              <IconBrandGithub size="36px" stroke="1.4px" />
+              <p className={style.pIcon}>GitHub </p>
+            </div>
           </div>
 
           <div className={style.lineOne}>
@@ -182,6 +212,30 @@ export default function Skills() {
             >
               <IconBrandBootstrap size="36px" stroke="1.4px" />
               <p className={style.pIcon}>Bootstrap</p>
+            </div>
+            <div
+              className={
+                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
+              }
+            >
+              <IconBrandTypescript size="36px" stroke="1.4px" />
+              <p className={style.pIcon}>TypeScript</p>
+            </div>
+            <div
+              className={
+                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
+              }
+            >
+              <IconBrandDocker size="36px" stroke="1.4px" />
+              <p className={style.pIcon}>Docker</p>
+            </div>
+            <div
+              className={
+                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
+              }
+            >
+              <IconBrandWordpress size="36px" stroke="1.4px" />
+              <p className={style.pIcon}>WordPress</p>
             </div>
           </div>
         </div>

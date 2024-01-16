@@ -109,14 +109,21 @@
   background-color: #ebe9e2ea;
   padding: 25px;
   border: 1px solid black;
-  width: 106px;
-  height: 107px;
+  width: 97px;
+  height: 96px;
   margin: 18px;
+  @include largeIntermediate {
+    padding: 10px;
+    margin: 5px;
+    width: 76px;
+    height: 69px;
+  }
+
   @include SmalIntermediate {
-    padding: 14px;
-    margin: 10px;
-    width: 87px;
-    height: 82px;
+    padding: 10px;
+    margin: 5px;
+    width: 76px;
+    height: 69px;
   }
   @include small {
     padding: 10px;
@@ -175,14 +182,20 @@
   margin: 0px;
   padding: 0px;
   font-family: satoshi;
-  @include small {
+  @include largeIntermediate {
     font-size: 13px;
+  }
+  @include SmalIntermediate {
+    font-size: 13px;
+  }
+  @include small {
+    font-size: 12px;
   }
   @include verySmall2 {
-    font-size: 13px;
+    font-size: 11px;
   }
   @include verySmall {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 
@@ -191,17 +204,25 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @include largeIntermediate {
+    display: grid;
+    grid-template-columns: 86px 86px 86px ;
+  }
+  @include SmalIntermediate {
+    display: grid;
+    grid-template-columns: 86px 86px 86px ;
+  }
   @include small {
     display: grid;
-    grid-template-columns: 86px 86px 86px;
+    grid-template-columns: 86px 86px 86px ;
   }
 
   @include verySmall2 {
     display: grid;
-    grid-template-columns: 86px 86px 86px;
+    grid-template-columns: 86px 86px 86px ;
   }
   @include verySmall {
     display: grid;
-    grid-template-columns: 86px 86px 86px;
+    grid-template-columns: 86px 86px  86px ;
   }
 }
