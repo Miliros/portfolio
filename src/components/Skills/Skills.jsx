@@ -110,7 +110,7 @@ export default function Skills() {
                 style.icons + (shouldAnimate ? ` ${style.animate}` : "")
               }
             >
-              <IconBrandJavascript size="36px" stroke="1.4px" />
+              <IconBrandJavascript size="50px" stroke="1.4px" />
               <p className={style.pIcon}>JavaScript</p>
             </div>
             <div
@@ -126,7 +126,7 @@ export default function Skills() {
                 style.icons + (shouldAnimate ? ` ${style.animate}` : "")
               }
             >
-              <IconBrandRedux size="36px" stroke="1.4px" />
+              <IconBrandRedux size="50px" stroke="1.4px" />
               <p className={style.pIcon}>Redux</p>
             </div>
             <div
@@ -142,7 +142,7 @@ export default function Skills() {
                 style.icons + (shouldAnimate ? ` ${style.animate}` : "")
               }
             >
-              <IconBrandNextjs size="36px" stroke="1.4px" />
+              <IconBrandNextjs size="50px" stroke="1.4px" />
               <p className={style.pIcon}>Next.js</p>
             </div>
             <div
@@ -201,7 +201,7 @@ export default function Skills() {
                 style.icons + (shouldAnimate ? ` ${style.animate}` : "")
               }
             >
-              <IconBrandSass size="36px" stroke="1.4px" />
+              <IconBrandSass size="59px" stroke="1.4px" />
               <p className={style.pIcon}>Sass</p>
             </div>
 
@@ -210,7 +210,7 @@ export default function Skills() {
                 style.icons + (shouldAnimate ? ` ${style.animate}` : "")
               }
             >
-              <IconBrandBootstrap size="36px" stroke="1.4px" />
+              <IconBrandBootstrap size="50px" stroke="1.4px" />
               <p className={style.pIcon}>Bootstrap</p>
             </div>
             <div
@@ -226,7 +226,7 @@ export default function Skills() {
                 style.icons + (shouldAnimate ? ` ${style.animate}` : "")
               }
             >
-              <IconBrandDocker size="36px" stroke="1.4px" />
+              <IconBrandDocker size="49px" stroke="1.4px" />
               <p className={style.pIcon}>Docker</p>
             </div>
             <div
@@ -234,7 +234,7 @@ export default function Skills() {
                 style.icons + (shouldAnimate ? ` ${style.animate}` : "")
               }
             >
-              <IconBrandWordpress size="36px" stroke="1.4px" />
+              <IconBrandWordpress size="39px" stroke="1.4px" />
               <p className={style.pIcon}>WordPress</p>
             </div>
           </div>
