@@ -1,3 +1,45 @@
 .App {
   text-align: center;
 }
+
+#navbarScrollingDropdown{
+  /* margin: 0px 16px !important; */
+  padding: 0px !important;
+  font-weight: 400 !important;
+  color:black !important;
+  width: 15% !important;
+  
+
+}
+.dropdown-menu{
+  /* width: 10px !important; */
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: #ebe9e2 !important;
+  min-width: 45px !important;
+  /* border: 0.5px solid black !important; */
+  border-radius: 0px !important;
+  color: black !important;
+  padding: 4px !important;
+  /* background-image: url(../src/walpaper.jpg); */
+background-color: none;
+
+}
+.dropdown-menu:hover {
+  font-weight: 500 !important;
+  transform: scale(1.05) !important;
+}
+.dropdown-item{
+  width: 45px !important;
+  padding: 0px !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+
+
+
+.dropdown-menu .dropdown-item.active {
+  background-color: #ebe9e2 !important;
+}
+
