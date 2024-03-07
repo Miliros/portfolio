@@ -10,22 +10,30 @@ import pokeDetail from "../../poke-detail.png";
 import mscLanding from "../../mscLandingg.png";
 import mscHome from "../../mscHome.png";
 import mscDetail from "../../mscDetail.png";
-
 import Carrousel from "./Carrousel";
+import dashHome from "../../dash-Home.png";
+import dashCard from "../../dash-Card.png";
+import dashCart from "../../dash-Cart.png";
+
+
 
 export default function Proyects() {
   const [photosRick, setPhotosRick] = useState(rickLanding);
   const [photosPoke, setPhotosPoke] = useState(pokeLanding);
   const [photosMsc, setPhotosMsc] = useState(mscLanding);
+  const [photosDash, setPhotosDash] = useState(dashHome);
+
 
   const [showCarouselPokemon, setShowCarouselPokemon] = useState(false);
   const [showCarouselRick, setShowCarouselRick] = useState(false);
   const [showCarouselMsc, setShowCarouselMsc] = useState(false);
+  const [showDashCarousel, setshowDashCarousel] = useState(false);
 
   const handleClose = () => {
     setShowCarouselPokemon(false);
     setShowCarouselRick(false);
     setShowCarouselMsc(false);
+    setshowDashCarousel(false);
   };
   const handleChangePhotoRick = () => {
     if (photosRick === rickLanding) {
@@ -58,6 +66,16 @@ export default function Proyects() {
       setPhotosMsc(mscLanding);
     }
   };
+  const handleChangePhotoDash = () => {
+    if (photosDash === dashHome) {
+      setPhotosDash(dashCard);
+    } else {
+      setPhotosDash(dashCart);
+    }
+     if (photosDash === dashCart) {
+      setPhotosDash(dashHome);
+    }
+  };
 
   useEffect(() => {
     const intervalId = setInterval(handleChangePhotoRick, 2000);
@@ -72,6 +90,10 @@ export default function Proyects() {
     const intervalId = setInterval(handleChangePhotoMSC, 2000);
     return () => clearInterval(intervalId);
   }, [photosMsc]);
+  useEffect(() => {
+    const intervalId = setInterval(handleChangePhotoDash, 2000);
+    return () => clearInterval(intervalId);
+  }, [photosDash]);
 
   return (
     <section id="proyects">
@@ -157,7 +179,7 @@ export default function Proyects() {
               </div>
 
               <p className={style.textProyect}>
-                "Rick & Morty API is my integrator project completed during
+                Rick & Morty API is my integrator project completed during
                 Henry's bootcamp.
                 <br /> It is a Single Page Application (SPA) that uses React for
                 the frontend and Redux for state management. All components were
@@ -166,7 +188,7 @@ export default function Proyects() {
                 Morty API' through a backend developed in Node.js using Express.
                 <br />
                 Users can search for a character, filter by gender, sort
-                alphabetically, and add characters to their favorites."
+                alphabetically, and add characters to their favorites.
               </p>
 
               <div className={style.ctnButtonsRick}>
@@ -198,7 +220,7 @@ export default function Proyects() {
                 </p>
               </div>
               <p className={style.textProyect}>
-                "Pokemon API is my individual project developed during Henry's
+                Pokemon API is my individual project developed during Henry's
                 bootcamp. It is a Single Page Application (SPA) built using
                 technologies like React and Redux in the frontend for efficient
                 state management, and CSS modules for styling.
@@ -209,7 +231,7 @@ export default function Proyects() {
                 interact with a PostgreSQL database.
                 <br />
                 Users can create a Pokémon, search for it by name, filter it by
-                type and strength, and also sort it alphabetically."
+                type and strength, and also sort it alphabetically.
               </p>
 
               <div className={style.ctnButtonsRick}>
@@ -238,13 +260,58 @@ export default function Proyects() {
               </div>
             </div>
           </div>
+        
+        </div>
+        <div className={style.lineO}>
+            <div className={style.ctnMacRick}>
+              <div className={style.contenedor}>
+                <img className={style.imgIpad} src={laptop} alt="" />
+                <img className={style.img} src={photosDash} alt="" />
+              </div>
+            </div>
+
+            <div className={style.ctnTextRick}>
+              <div className={style.cntnTitleProyect}>
+                <p className={style.p}>
+                  <strong> My Dashboard</strong>
+                </p>
+              </div>
+
+              <p className={style.textProyect}>
+              This project consists of an administrative dashboard with different sessions.
+                <br />  Developed with Next.js, it seamlessly integrates with the Pokémon API, allowing users to fetch Pokémon data dynamically. 
+                <br />  Moreover, users can mark their favorite Pokémon, and these preferences persist using local storage.
+                <br />
+                The CSS styling is entirely crafted with Tailwind CSS, providing a modern and responsive design. Additionally, the application features a shopping session where users can add Pokémon products to their cart. The total reflects in another session where users can review all their purchases.
+              </p>
+
+              <div className={style.ctnButtonsRick}>
+                <div className={style.button}>
+                  <a
+                    href="https://github.com/Miliros/my-dashboard-next"
+                    target="_blank"
+                    rel="noreferrer"
+                    className={style.a}
+                  >
+                    Code
+                  </a>
+                </div>
+                <button
+                  onClick={() => setshowDashCarousel(true)}
+                  className={style.buttonPhoto}
+                >
+                  See more
+                </button>
+              </div>
+            </div>
+          </div>
           <Carrousel
             handleClose={handleClose}
             showPokemonCarousel={showCarouselPokemon}
             showRickCarousel={showCarouselRick}
             showMscCarousel={showCarouselMsc}
+            showDashCarousel={showDashCarousel}
           />
-        </div>
       </div>
     </section>
   );

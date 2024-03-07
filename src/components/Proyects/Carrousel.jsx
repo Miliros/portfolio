@@ -12,6 +12,9 @@ import mscCart from "../../mscCart.png";
 import mscRegister from "../../MSCregister.png";
 import mscReviews from "../../mscReviews.png";
 import mscSofa from "../../moreDetailMsc.png";
+import dashDash from "../../Dash-dash.png";
+import DashCart from "../../dash-Cartt.png";
+import dashPoke from "../../dash-Poke.png";
 //images
 
 import pokeHomeOriginal from "../../pokeHomeOriginal.png";
@@ -22,12 +25,13 @@ export default function Carrousel({
   showPokemonCarousel,
   showRickCarousel,
   showMscCarousel,
+  showDashCarousel,
   handleClose,
 }) {
   return (
     <Modal
       onHide={handleClose}
-      show={showPokemonCarousel || showRickCarousel || showMscCarousel}
+      show={showPokemonCarousel || showRickCarousel || showMscCarousel || showDashCarousel}
       size="xl"
       centered
     >
@@ -102,6 +106,36 @@ export default function Carrousel({
           <Carousel.Item>
             <img className="d-block w-100" src={mscSofa} alt="Third slide" />
           </Carousel.Item>
+        </Carousel>
+      )}
+      {showDashCarousel && (
+        <Carousel>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={dashDash}
+              alt="Second slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={DashCart} alt="First slide" />
+          </Carousel.Item>
+          {/* <Carousel.Item>
+            <img className="d-block w-100" src={dashDash} alt="Third slide" />
+          </Carousel.Item> */}
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={dashPoke}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          {/* <Carousel.Item>
+            <img className="d-block w-100" src={dashDash} alt="Third slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={dashDash} alt="Third slide" />
+          </Carousel.Item> */}
         </Carousel>
       )}
     </Modal>
