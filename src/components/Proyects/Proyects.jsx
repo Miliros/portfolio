@@ -280,7 +280,7 @@ export default function Proyects() {
               <p className={style.textProyect}>
               This project consists of an administrative dashboard with different sessions.
                 <br />  Developed with Next.js, it seamlessly integrates with the Pokémon API, allowing users to fetch Pokémon data dynamically. 
-                <br />  Moreover, users can mark their favorite Pokémon, and these preferences persist using local storage.
+                <br />  Moreover, users can mark their favorite Pokémon, and these preferences persist using local storage. To efficiently manage global states, the project utilizes Redux Toolkit.
                 <br />
                 The CSS styling is entirely crafted with Tailwind CSS, providing a modern and responsive design. Additionally, the application features a shopping session where users can add Pokémon products to their cart. The total reflects in another session where users can review all their purchases.
               </p>
