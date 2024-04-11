@@ -123,8 +123,7 @@ export default function Proyects() {
                 </p>
               </div>
               <p className={style.textProyect}>
-                MSC API is a Full Stack group project developed during the Henry
-                program. It combines leading technologies to provide a unique
+                MSC API is a Full Stack group project. It combines leading technologies to provide a unique
                 online furniture shopping experience. On the frontend, uses
                 React, Redux, and Bootstrap for a sleek UI. The backend is
                 powered by Express, managing a PostgreSQL database with
@@ -179,9 +178,7 @@ export default function Proyects() {
               </div>
 
               <p className={style.textProyect}>
-                Rick & Morty API is my integrator project completed during
-                Henry's bootcamp.
-                <br /> It is a Single Page Application (SPA) that uses React for
+                Rick & Morty API is a Single Page Application (SPA) that uses React for
                 the frontend and Redux for state management. All components were
                 developed using CSS without the use of external libraries.
                 <br /> The SPA consumes data from an API called 'The Rick and
@@ -220,8 +217,7 @@ export default function Proyects() {
                 </p>
               </div>
               <p className={style.textProyect}>
-                Pokemon API is my individual project developed during Henry's
-                bootcamp. It is a Single Page Application (SPA) built using
+                Pokemon API is a Single Page Application (SPA) built using
                 technologies like React and Redux in the frontend for efficient
                 state management, and CSS modules for styling.
                 <br />
