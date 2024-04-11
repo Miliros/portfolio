@@ -56,6 +56,7 @@ export default function Proyects() {
     }
   };
 
+  
   const handleChangePhotoMSC = () => {
     if (photosMsc === mscLanding) {
       setPhotosMsc(mscHome);
