@@ -2,16 +2,14 @@
   text-align: center;
 }
 
-#navbarScrollingDropdown{
+#navbarScrollingDropdown {
   /* margin: 0px 16px !important; */
   padding: 0px !important;
   font-weight: 400 !important;
-  color:black !important;
+  color: black !important;
   width: 15% !important;
-  
-
 }
-.dropdown-menu{
+.dropdown-menu {
   /* width: 10px !important; */
   justify-content: center !important;
   align-items: center !important;
@@ -22,24 +20,23 @@
   color: black !important;
   padding: 4px !important;
   /* background-image: url(../src/walpaper.jpg); */
-background-color: none;
-
+  background-color: none;
 }
 .dropdown-menu:hover {
   font-weight: 500 !important;
-  transform: scale(1.05) !important;
+  transform: scale(1.01) !important;
 }
-.dropdown-item{
+.dropdown-item {
   width: 45px !important;
   padding: 0px !important;
   justify-content: center !important;
   align-items: center !important;
 }
 
-
-
+.dropdown-item:hover {
+  background-color: #b1ada21c !important;
+}
 
 .dropdown-menu .dropdown-item.active {
   background-color: #ebe9e2 !important;
 }
-

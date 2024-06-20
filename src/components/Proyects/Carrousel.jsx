@@ -31,7 +31,12 @@ export default function Carrousel({
   return (
     <Modal
       onHide={handleClose}
-      show={showPokemonCarousel || showRickCarousel || showMscCarousel || showDashCarousel}
+      show={
+        showPokemonCarousel ||
+        showRickCarousel ||
+        showMscCarousel ||
+        showDashCarousel
+      }
       size="xl"
       centered
     >
@@ -88,7 +93,7 @@ export default function Carrousel({
             />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100" src={mscHome} alt="First slide" />
+            <img className="d-block w-100 " src={mscHome} alt="First slide" />
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={mscCart} alt="Third slide" />
@@ -111,11 +116,7 @@ export default function Carrousel({
       {showDashCarousel && (
         <Carousel>
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={dashDash}
-              alt="Second slide"
-            />
+            <img className="d-block w-100" src={dashDash} alt="Second slide" />
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={DashCart} alt="First slide" />
@@ -124,11 +125,7 @@ export default function Carrousel({
             <img className="d-block w-100" src={dashDash} alt="Third slide" />
           </Carousel.Item> */}
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={dashPoke}
-              alt="Third slide"
-            />
+            <img className="d-block w-100" src={dashPoke} alt="Third slide" />
           </Carousel.Item>
           {/* <Carousel.Item>
             <img className="d-block w-100" src={dashDash} alt="Third slide" />

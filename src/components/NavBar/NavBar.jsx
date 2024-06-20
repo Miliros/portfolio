@@ -3,14 +3,11 @@ import styles from "./NavBar.module.scss";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
-import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 export default function NavBar() {
   const [navResponsive, setNavResponsive] = useState(false);
   const [nav, setNav] = useState(false);
-
-
 
   const changeBackground = () => {
     if (window.scrollY >= 80) {
@@ -63,18 +60,24 @@ export default function NavBar() {
             >
               Contact me
             </Link>
-        
-            <NavDropdown  title="CV"  className={styles.pCv}  id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3"  className={styles.Item}>   
-                <NavLink to='/pdfe' target="_blank" className={styles.p4}  >EN</NavLink>
-</NavDropdown.Item>
-              
-              <NavDropdown.Item href="#action5"  className={styles.Item}>
-              <NavLink to='/pdf'   target="_blank" className={styles.p4}>ES</NavLink>
+
+            <NavDropdown
+              title="CV"
+              className={styles.pCv}
+              id="navbarScrollingDropdown"
+            >
+              <NavDropdown.Item href="#action3" className={styles.Item}>
+                <NavLink to="/pdfe" target="_blank" className={styles.p4}>
+                  EN
+                </NavLink>
+              </NavDropdown.Item>
+
+              <NavDropdown.Item href="#action5" className={styles.Item}>
+                <NavLink to="/pdf" target="_blank" className={styles.p4}>
+                  ES
+                </NavLink>
               </NavDropdown.Item>
             </NavDropdown>
-
-           
           </Nav>
         </Navbar.Collapse>
       </Container>
