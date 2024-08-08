@@ -6,14 +6,14 @@
 }
 
 .title {
-  font-size: 35px;
+  font-size: 39px;
   text-align: center;
   line-height: 0px;
   letter-spacing: 3px;
   font-family: the seasons;
   margin: 0px;
   @include verySmall {
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 .p {
@@ -24,25 +24,33 @@
   font-family: valentino;
   padding-left: 60px;
   padding-right: 60px;
+  @include largeIntermediate {
+    padding-left: 18.5px;
+    padding-right: 27px;
+    font-size: 36px;
+  }
   @include SmalIntermediate {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 27px;
+    padding-left: 18.5px;
+    padding-right: 25px;
+    font-size: 36px;
   }
   @include small {
     padding-left: 21px;
     padding-right: 20px;
-    font-size: 26px;
+    font-size: 36px;
   }
   @include verySmall2 {
     margin-top: 16px;
-
-    font-size: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 27px;
+    justify-content: center;
     text-align: center;
   }
   @include verySmall {
-    // margin-top: 16px;
-    font-size: 24px;
+    font-size: 26px;
+    padding-left: 0px;
+    padding-right: 0px;
     text-align: center;
     width: 240px;
   }
@@ -62,6 +70,7 @@
   border-top: 1px solid black;
   flex-direction: row;
   height: 100vh;
+  background-color: #ebe9e2;
 
   @include verySmall {
     flex-direction: column;
@@ -76,6 +85,8 @@
   border-top: 1px solid black;
   flex-direction: row;
   height: 100vh;
+  background-color: #ebe9e2;
+
   @include verySmall {
     flex-direction: column-reverse;
     justify-content: center;
@@ -197,17 +208,26 @@
 .textProyect {
   text-align: start;
   font-family: satoshi;
-  font-size: 14px;
+  font-size: 17px;
   padding-left: 60px;
   padding-right: 60px;
   max-width: 600px;
   line-height: 25.8px;
-
+  @include largeIntermediate {
+    font-family: satoshi;
+    font-size: 22px;
+    padding: 0px;
+    line-height: 23px;
+    max-width: 810px;
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 18px;
+  }
   @include SmalIntermediate {
     font-family: satoshi;
-    font-size: 12px;
-    padding: 2px;
-    line-height: 17px;
+    font-size: 19px;
+    padding: 4px;
+    line-height: 21px;
     max-width: 810px;
     margin: 0px;
     padding-left: 20px;
@@ -215,27 +235,27 @@
   }
   @include small {
     font-family: satoshi;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 17px;
+    line-height: 16px;
     margin: 0px;
     padding-left: 20px;
   }
   @include verySmall2 {
     font-family: satoshi;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 17px;
     margin: 0px;
   }
   @include verySmall {
     font-family: satoshi;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 17px;
     width: 300px;
     // line-height: 12px;
     margin-bottom: 30px;
   }
   @include veryverySmall1 {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
@@ -257,6 +277,7 @@
 }
 .container {
   width: 100%;
+
   overflow: hidden;
   display: flex;
   border-top: 1px solid black;

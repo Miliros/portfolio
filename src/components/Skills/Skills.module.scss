@@ -7,19 +7,19 @@
   flex-direction: column;
 }
 .cntn {
-  background-image: url(../../fondosk.jpg);
+  background-image: url(../../imageEndd.jpg);
   background-repeat: repeat-y;
   background-size: cover;
   background-position: 0% 0%;
   background-attachment: fixed;
   @include verySmall2 {
-    background-image: url(../../fondosk.jpg);
+    background-image: url(../../imageEndd.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: unset;
   }
   @include verySmall {
-    background-image: url(../../fondosk.jpg);
+    background-image: url(../../imageEndd.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: unset;
@@ -87,17 +87,14 @@
 }
 
 .title {
-  font-size: 35px;
+  font-size: 39px;
   text-align: center;
   line-height: 0px;
   letter-spacing: 3px;
   font-family: the seasons;
   margin: 0px;
-  @include verySmall2 {
-    font-size: 24px;
-  }
   @include verySmall {
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 
@@ -206,23 +203,23 @@
   align-items: center;
   @include largeIntermediate {
     display: grid;
-    grid-template-columns: 86px 86px 86px ;
+    grid-template-columns: 86px 86px 86px;
   }
   @include SmalIntermediate {
     display: grid;
-    grid-template-columns: 86px 86px 86px ;
+    grid-template-columns: 86px 86px 86px;
   }
   @include small {
     display: grid;
-    grid-template-columns: 86px 86px 86px ;
+    grid-template-columns: 86px 86px 86px;
   }
 
   @include verySmall2 {
     display: grid;
-    grid-template-columns: 86px 86px 86px ;
+    grid-template-columns: 86px 86px 86px;
   }
   @include verySmall {
     display: grid;
-    grid-template-columns: 86px 86px  86px ;
+    grid-template-columns: 86px 86px 86px;
   }
 }

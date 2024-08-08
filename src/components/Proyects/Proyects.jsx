@@ -15,14 +15,11 @@ import dashHome from "../../dash-Home.png";
 import dashCard from "../../dash-Card.png";
 import dashCart from "../../dash-Cart.png";
 
-
-
 export default function Proyects() {
   const [photosRick, setPhotosRick] = useState(rickLanding);
   const [photosPoke, setPhotosPoke] = useState(pokeLanding);
   const [photosMsc, setPhotosMsc] = useState(mscLanding);
   const [photosDash, setPhotosDash] = useState(dashHome);
-
 
   const [showCarouselPokemon, setShowCarouselPokemon] = useState(false);
   const [showCarouselRick, setShowCarouselRick] = useState(false);
@@ -56,7 +53,6 @@ export default function Proyects() {
     }
   };
 
-  
   const handleChangePhotoMSC = () => {
     if (photosMsc === mscLanding) {
       setPhotosMsc(mscHome);
@@ -73,7 +69,7 @@ export default function Proyects() {
     } else {
       setPhotosDash(dashCart);
     }
-     if (photosDash === dashCart) {
+    if (photosDash === dashCart) {
       setPhotosDash(dashHome);
     }
   };
@@ -124,17 +120,16 @@ export default function Proyects() {
                 </p>
               </div>
               <p className={style.textProyect}>
-                MSC API is a Full Stack group project. It combines leading technologies to provide a unique
-                online furniture shopping experience. On the frontend, uses
-                React, Redux, and Bootstrap for a sleek UI. The backend is
-                powered by Express, managing a PostgreSQL database with
+                MSC API is a Full Stack project that offers a unique online
+                furniture shopping experience.
+                <br />
+                It uses React, Redux, and Bootstrap on the frontend, with
+                Express and PostgreSQL on the backend, managed through
                 Sequelize.
                 <br />
-                Auth0 ensures user security with various methods. Cloudinary
-                manages images. MSC is a feature-rich e-commerce platform for
-                easy furniture search and purchase. Admins can oversee products,
-                materials, orders, and accounts through a robust panel.
-                <br />
+                Auth0 handles security, and Cloudinary manages images. Admins
+                can manage products, orders, and accounts through a robust
+                panel.
               </p>
 
               <div className={style.ctnButtonsRick}>
@@ -179,14 +174,15 @@ export default function Proyects() {
               </div>
 
               <p className={style.textProyect}>
-                Rick & Morty API is a Single Page Application (SPA) that uses React for
-                the frontend and Redux for state management. All components were
-                developed using CSS without the use of external libraries.
-                <br /> The SPA consumes data from an API called 'The Rick and
-                Morty API' through a backend developed in Node.js using Express.
+                Rick & Morty API is a Single Page Application (SPA) using React
+                and Redux for state management.
                 <br />
-                Users can search for a character, filter by gender, sort
-                alphabetically, and add characters to their favorites.
+                It consumes 'The Rick and Morty API' via a Node.js backend with
+                Express. Users can search, filter, sort, and favorite
+                characters.
+                <br />
+                The entire UI is styled with custom CSS, without external
+                libraries.
               </p>
 
               <div className={style.ctnButtonsRick}>
@@ -218,17 +214,13 @@ export default function Proyects() {
                 </p>
               </div>
               <p className={style.textProyect}>
-                Pokemon API is a Single Page Application (SPA) built using
-                technologies like React and Redux in the frontend for efficient
-                state management, and CSS modules for styling.
+                Pokemon API is a SPA built with React and Redux for state
+                management, and CSS modules for styling.
                 <br />
-                The SPA consumes data from an external API called 'Poke API' and
-                communicates with a backend developed in Node.js using Express
-                to handle client requests. The application uses Sequelize to
-                interact with a PostgreSQL database.
+                It fetches data from 'Poke API' and interacts with a PostgreSQL
+                database via a Node.js backend using Express and Sequelize.
                 <br />
-                Users can create a Pokémon, search for it by name, filter it by
-                type and strength, and also sort it alphabetically.
+                Users can create, search, filter, and sort Pokémon.
               </p>
 
               <div className={style.ctnButtonsRick}>
@@ -257,58 +249,61 @@ export default function Proyects() {
               </div>
             </div>
           </div>
-        
         </div>
         <div className={style.lineO}>
-            <div className={style.ctnMacRick}>
-              <div className={style.contenedor}>
-                <img className={style.imgIpad} src={laptop} alt="" />
-                <img className={style.img} src={photosDash} alt="" />
-              </div>
-            </div>
-
-            <div className={style.ctnTextRick}>
-              <div className={style.cntnTitleProyect}>
-                <p className={style.p}>
-                  <strong> My Dashboard</strong>
-                </p>
-              </div>
-
-              <p className={style.textProyect}>
-              This project consists of an administrative dashboard with different sessions.
-                <br />  Developed with Next.js, it seamlessly integrates with the Pokémon API, allowing users to fetch Pokémon data dynamically. 
-                <br />  Moreover, users can mark their favorite Pokémon, and these preferences persist using local storage. To efficiently manage global states, the project utilizes Redux Toolkit.
-                <br />
-                The CSS styling is entirely crafted with Tailwind CSS, providing a modern and responsive design. Additionally, the application features a shopping session where users can add Pokémon products to their cart. The total reflects in another session where users can review all their purchases.
-              </p>
-
-              <div className={style.ctnButtonsRick}>
-                <div className={style.button}>
-                  <a
-                    href="https://github.com/Miliros/my-dashboard-next"
-                    target="_blank"
-                    rel="noreferrer"
-                    className={style.a}
-                  >
-                    Code
-                  </a>
-                </div>
-                <button
-                  onClick={() => setshowDashCarousel(true)}
-                  className={style.buttonPhoto}
-                >
-                  See more
-                </button>
-              </div>
+          <div className={style.ctnMacRick}>
+            <div className={style.contenedor}>
+              <img className={style.imgIpad} src={laptop} alt="" />
+              <img className={style.img} src={photosDash} alt="" />
             </div>
           </div>
-          <Carrousel
-            handleClose={handleClose}
-            showPokemonCarousel={showCarouselPokemon}
-            showRickCarousel={showCarouselRick}
-            showMscCarousel={showCarouselMsc}
-            showDashCarousel={showDashCarousel}
-          />
+
+          <div className={style.ctnTextRick}>
+            <div className={style.cntnTitleProyect}>
+              <p className={style.p}>
+                <strong> My Dashboard</strong>
+              </p>
+            </div>
+
+            <p className={style.textProyect}>
+              This is an administrative dashboard developed with Next.js,
+              integrating the Pokémon API for dynamic data fetching.
+              <br />
+              Users can favorite Pokémon, with preferences stored locally, and
+              manage global states using Redux Toolkit.
+              <br />
+              Tailwind CSS ensures a modern, responsive design. The app includes
+              a shopping session where users can add Pokémon products to their
+              cart and review purchases.
+            </p>
+
+            <div className={style.ctnButtonsRick}>
+              <div className={style.button}>
+                <a
+                  href="https://github.com/Miliros/my-dashboard-next"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={style.a}
+                >
+                  Code
+                </a>
+              </div>
+              <button
+                onClick={() => setshowDashCarousel(true)}
+                className={style.buttonPhoto}
+              >
+                See more
+              </button>
+            </div>
+          </div>
+        </div>
+        <Carrousel
+          handleClose={handleClose}
+          showPokemonCarousel={showCarouselPokemon}
+          showRickCarousel={showCarouselRick}
+          showMscCarousel={showCarouselMsc}
+          showDashCarousel={showDashCarousel}
+        />
       </div>
     </section>
   );

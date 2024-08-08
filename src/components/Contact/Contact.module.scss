@@ -17,15 +17,16 @@
   }
 }
 .title {
-  font-size: 35px;
+  font-size: 39px;
   text-align: center;
-  padding: 3px;
-  letter-spacing: 0px;
-  margin: 0px;
+  line-height: 0px;
+  letter-spacing: 3px;
   font-family: the seasons;
-  @include verySmall2 {
-    font-size: 24px;
+  margin: 0px;
+  @include verySmall {
+    font-size: 26px;
   }
+
   @include verySmall {
     font-size: 24px;
   }
@@ -65,13 +66,14 @@
   }
 }
 .backgroundImag {
-  width: 100%;
+  // width: 100%;
   height: 115.5vh;
   background-image: url(../../imageEnd.jpg);
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 0%;
   background-attachment: fixed;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,26 +94,26 @@
 
   @include verySmall2 {
     background-repeat: no-repeat;
-    background-size: cover;
+    // background-size: cover;
     background-attachment: unset;
     height: 112vh;
   }
   @include verySmall {
     background-repeat: no-repeat;
-    background-size: cover;
+    // background-size: cover;
     background-attachment: unset;
     height: 129vh;
   }
   @include veryverySmall1 {
     height: 129vh;
     background-repeat: no-repeat;
-    background-size: cover;
+    // background-size: cover;
     background-attachment: unset;
   }
   @include veryverySmall {
     height: 129.2vh;
     background-repeat: no-repeat;
-    background-size: cover;
+    // background-size: cover;
     background-attachment: unset;
   }
 }
