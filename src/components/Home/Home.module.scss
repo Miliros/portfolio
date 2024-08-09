@@ -94,7 +94,6 @@
     font-size: 38px;
     font-weight: 600;
     display: none;
-    background-color: green;
   }
 }
 
@@ -108,18 +107,18 @@
     margin-left: 8px;
   }
   @include small {
-    height: 340px;
+    height: 342px;
 
     margin-left: 8px;
   }
   @include verySmall2 {
-    height: 310px;
+    height: 312px;
     margin-left: 7px;
     margin-bottom: 13px;
   }
 
   @include verySmall {
-    height: 144px;
+    height: 146px;
     width: 142px;
     border-radius: 50%;
     margin-left: 0;
