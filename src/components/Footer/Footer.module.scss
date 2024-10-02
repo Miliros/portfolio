@@ -6,14 +6,23 @@
   justify-content: space-between;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.932);
+  @include large3 {
+    height: 37vh;
+  }
+  @include large {
+    height: 39vh;
+  }
+  @include SmalIntermediate {
+    height: 42vh;
+  }
   @include small {
-    height: 68vh;
+    height: 42vh;
   }
   @include verySmall2 {
-    height: 51vh;
+    height: 49vh;
   }
   @include verySmall {
-    height: 51vh;
+    height: 49vh;
   }
 }
 .ctnFooter {

@@ -126,6 +126,12 @@
   justify-content: center;
   align-items: center;
   padding: 34px;
+  @include large3 {
+    width: 28%;
+  }
+  @include large {
+    width: 31%;
+  }
   @include largeIntermediate {
     width: 40%;
     max-height: 100vh;

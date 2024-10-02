@@ -20,6 +20,14 @@
 }
 .nameAndSubtitle {
   height: 425px;
+  @include large3 {
+    // margin-left: 78px;
+    height: 580px;
+  }
+  @include large {
+    // margin-left: 78px;
+    height: 400px;
+  }
   @include SmalIntermediate {
     height: 350px;
   }
@@ -101,7 +109,14 @@
   height: 455px;
   border: 1px solid rgb(0, 0, 0);
   margin-left: 47px;
-
+  @include large3 {
+    margin-left: 78px;
+    height: 580px;
+  }
+  @include large {
+    // margin-left: 78px;
+    height: 430px;
+  }
   @include SmalIntermediate {
     height: 350px;
     margin-left: 8px;

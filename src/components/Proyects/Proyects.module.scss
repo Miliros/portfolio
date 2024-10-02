@@ -24,6 +24,12 @@
   font-family: valentino;
   padding-left: 60px;
   padding-right: 60px;
+  @include large3 {
+    font-size: 36px;
+  }
+  @include large {
+    font-size: 36px;
+  }
   @include largeIntermediate {
     padding-left: 18.5px;
     padding-right: 27px;
@@ -213,6 +219,12 @@
   padding-right: 60px;
   max-width: 600px;
   line-height: 25.8px;
+  @include large3 {
+    font-size: 22px;
+  }
+  @include large {
+    font-size: 22px;
+  }
   @include largeIntermediate {
     font-family: satoshi;
     font-size: 22px;
