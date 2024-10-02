@@ -10,6 +10,35 @@ import {
 } from "@tabler/icons-react";
 
 export default function Home() {
+  // Array de enlaces sociales e íconos dentro del componente
+  const socialLinks = [
+    {
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/in/milagros-rosales-71a835284/",
+      icon: <IconBrandLinkedin size="20px" stroke="1.2px" />,
+    },
+    {
+      name: "GitHub",
+      href: "https://github.com/Miliros",
+      icon: <IconBrandGithub size="20px" stroke="1.2px" />,
+    },
+    {
+      name: "Facebook",
+      href: "https://www.facebook.com/milirosales97/",
+      icon: <IconBrandFacebook size="20px" stroke="1.2px" />,
+    },
+    {
+      name: "Instagram",
+      href: "https://www.instagram.com/milirosales/",
+      icon: <IconBrandInstagram size="20px" stroke="1.2px" />,
+    },
+    {
+      name: "Email",
+      href: "mailto:milagros4046@hotmail.com",
+      icon: <IconMail size="20px" stroke="1.2px" />,
+    },
+  ];
+
   return (
     <section
       style={{
@@ -19,47 +48,18 @@ export default function Home() {
       className={styles.cntnHome}
     >
       <div className={styles.divIcons}>
-        <div className={styles.icon}>
-          <a
-            href="https://www.linkedin.com/in/milagros-rosales-71a835284/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <IconBrandLinkedin size="20px" stroke="1.2px" />
-          </a>
-        </div>
-        <div className={styles.icon}>
-          <a href="https://github.com/Miliros" target="_blank" rel="noreferrer">
-            <IconBrandGithub size="20px" stroke="1.2px" />
-          </a>
-        </div>
-        <div className={styles.icon}>
-          <a
-            href="https://www.facebook.com/milirosales97/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <IconBrandFacebook size="20px" stroke="1.2px" />
-          </a>
-        </div>
-        <div className={styles.icon}>
-          <a
-            href="https://www.instagram.com/milirosales/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <IconBrandInstagram size="20px" stroke="1.2px" />
-          </a>
-        </div>
-        <div className={styles.icon}>
-          <a
-            href="mailto:milagros4046@hotmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <IconMail size="20px" stroke="1.2px" />
-          </a>
-        </div>
+        {socialLinks.map((link, index) => (
+          <div className={styles.icon} key={index}>
+            <a
+              href={link.href}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={link.name}
+            >
+              {link.icon}
+            </a>
+          </div>
+        ))}
       </div>
       <div className={styles.divNameImg}>
         <div className={styles.nameAndSubtitle}>
@@ -83,7 +83,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.divImg}>
-          <img className={styles.img} src={image} />
+          <img className={styles.img} src={image} alt="Milagros Rosales" />
         </div>
       </div>
     </section>

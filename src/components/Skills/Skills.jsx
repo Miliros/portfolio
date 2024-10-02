@@ -14,16 +14,49 @@ import {
   IconBrandTailwind,
   IconBrandGithub,
   IconBrandDocker,
-  IconBrandWordpress
+  IconBrandWordpress,
 } from "@tabler/icons-react";
 import logoSql from "../../logoSql.png";
 import logoExpress from "../../logoExpress.png";
 import logoNodeJs from "../../logoNodeJs.png";
 import logoSequelize from "../../logoSequelize.png";
 
+// Componente para cada skill individual
+const Skill = ({ icon: Icon, img, name, size = "36px", stroke = "1.4px" }) => (
+  <div className={style.icons}>
+    {Icon ? (
+      <Icon size={size} stroke={stroke} />
+    ) : (
+      <img src={img} alt={name} className={style.imgLogo} />
+    )}
+    <p className={style.pIcon}>{name}</p>
+  </div>
+);
+
 export default function Skills() {
   const [shouldAnimate, setShouldAnimate] = useState(false);
   const skillsRef = useRef(null);
+
+  const skills = [
+    { icon: IconBrandHtml5, name: "HTML" },
+    { icon: IconBrandCss3, name: "CSS" },
+    { icon: IconBrandJavascript, name: "JavaScript", size: "50px" },
+    { icon: IconBrandReact, name: "React.js" },
+    { icon: IconBrandRedux, name: "Redux", size: "50px" },
+    { icon: IconBrandGit, name: "Git" },
+    { icon: IconBrandNextjs, name: "Next.js", size: "50px" },
+    { icon: IconBrandTailwind, name: "Tailwind" },
+    { icon: IconBrandGithub, name: "GitHub" },
+    { img: logoSql, name: "PostgreSQL" },
+    { img: logoSequelize, name: "Sequelize" },
+    { img: logoExpress, name: "Express.js" },
+    { img: logoNodeJs, name: "Node.js" },
+    { icon: IconBrandSass, name: "Sass", size: "59px" },
+    { icon: IconBrandBootstrap, name: "Bootstrap", size: "50px" },
+    { icon: IconBrandTypescript, name: "TypeScript" },
+    { icon: IconBrandDocker, name: "Docker", size: "49px" },
+    { icon: IconBrandWordpress, name: "WordPress", size: "39px" },
+  ];
 
   useEffect(() => {
     const options = {
@@ -34,11 +67,7 @@ export default function Skills() {
 
     const handleIntersection = (entries) => {
       const entry = entries[0];
-      if (entry.isIntersecting) {
-        setShouldAnimate(true);
-      } else {
-        setShouldAnimate(false);
-      }
+      setShouldAnimate(entry.isIntersecting);
     };
 
     const observer = new IntersectionObserver(handleIntersection, options);
@@ -53,190 +82,32 @@ export default function Skills() {
       }
     };
   }, []);
+
   return (
     <section ref={skillsRef} id="skills" className={style.cntn}>
-      <div
-        className={style.ctnSkills}
-        // style={{
-        //   height: "100vh",
-        // }}
-      >
+      <div className={style.ctnSkills}>
         <div className={style.container}>
           <div
             className={
               style.phrase + (shouldAnimate ? ` ${style.animate2}` : "")
             }
           >
-            <span> MY SET SKILLS/</span>
-            <span> MY SET SKILLS/</span>
-            <span> MY SET SKILLS/</span>
-            <span> MY SET SKILLS/</span>
-            <span> MY SET SKILLS/</span>
-            <span> MY SET SKILLS/</span>
-            <span> MY SET SKILLS/</span>
-            <span> MY SET SKILLS/</span>
-            <span> MY SET SKILLS/</span>
-            <span> MY SET SKILLS/</span>
-            <span> MY SET SKILLS/</span>
-            <span> MY SET SKILLS/</span>
-            <span> MY SET SKILLS/</span>
-            <span> MY SET SKILLS/</span>
+            {Array(14).fill(<span> MY SET SKILLS/</span>)}
           </div>
         </div>
         <div className={style.backgroundImage}>
           <p className={style.title}>SKILLS</p>
         </div>
-
         <div className={style.divSkills}>
           <div className={style.lineOne}>
-            <div
-              className={
-                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
-              }
-            >
-              <IconBrandHtml5 size="36px" stroke="1.4px" />
-              <p className={style.pIcon}>HTML</p>
-            </div>
-            <div
-              className={
-                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
-              }
-            >
-              <IconBrandCss3 size="36px" stroke="1.4px" />
-              <p className={style.pIcon}>CSS</p>
-            </div>
-            <div
-              className={
-                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
-              }
-            >
-              <IconBrandJavascript size="50px" stroke="1.4px" />
-              <p className={style.pIcon}>JavaScript</p>
-            </div>
-            <div
-              className={
-                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
-              }
-            >
-              <IconBrandReact size="36px" stroke="1.4px" />
-              <p className={style.pIcon}>React.js</p>
-            </div>
-            <div
-              className={
-                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
-              }
-            >
-              <IconBrandRedux size="50px" stroke="1.4px" />
-              <p className={style.pIcon}>Redux</p>
-            </div>
-            <div
-              className={
-                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
-              }
-            >
-              <IconBrandGit size="36px" stroke="1.4px" />
-              <p className={style.pIcon}>Git</p>
-            </div>
-            <div
-              className={
-                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
-              }
-            >
-              <IconBrandNextjs size="50px" stroke="1.4px" />
-              <p className={style.pIcon}>Next.js</p>
-            </div>
-            <div
-              className={
-                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
-              }
-            >
-              <IconBrandTailwind size="36px" stroke="1.4px" />
-              <p className={style.pIcon}>Tailwind </p>
-            </div>
-            <div
-              className={
-                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
-              }
-            >
-              <IconBrandGithub size="36px" stroke="1.4px" />
-              <p className={style.pIcon}>GitHub </p>
-            </div>
+            {skills.slice(0, 9).map((skill, index) => (
+              <Skill key={index} {...skill} />
+            ))}
           </div>
-
           <div className={style.lineOne}>
-            <div
-              className={
-                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
-              }
-            >
-              <img src={logoSql} alt="" className={style.imgLogo} />
-              <p className={style.pIcon}>PostgreSQL</p>
-            </div>
-            <div
-              className={
-                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
-              }
-            >
-              <img src={logoSequelize} alt="" className={style.imgLogo} />
-              <p className={style.pIcon}>Sequelize</p>
-            </div>
-            <div
-              className={
-                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
-              }
-            >
-              <img src={logoExpress} alt="" className={style.imgLogo} />
-              <p className={style.pIcon}>Express.js</p>
-            </div>
-            <div
-              className={
-                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
-              }
-            >
-              <img src={logoNodeJs} alt="" className={style.imgLogo} />
-              <p className={style.pIcon}>Node.js</p>
-            </div>
-            <div
-              className={
-                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
-              }
-            >
-              <IconBrandSass size="59px" stroke="1.4px" />
-              <p className={style.pIcon}>Sass</p>
-            </div>
-
-            <div
-              className={
-                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
-              }
-            >
-              <IconBrandBootstrap size="50px" stroke="1.4px" />
-              <p className={style.pIcon}>Bootstrap</p>
-            </div>
-            <div
-              className={
-                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
-              }
-            >
-              <IconBrandTypescript size="36px" stroke="1.4px" />
-              <p className={style.pIcon}>TypeScript</p>
-            </div>
-            <div
-              className={
-                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
-              }
-            >
-              <IconBrandDocker size="49px" stroke="1.4px" />
-              <p className={style.pIcon}>Docker</p>
-            </div>
-            <div
-              className={
-                style.icons + (shouldAnimate ? ` ${style.animate}` : "")
-              }
-            >
-              <IconBrandWordpress size="39px" stroke="1.4px" />
-              <p className={style.pIcon}>WordPress</p>
-            </div>
+            {skills.slice(9).map((skill, index) => (
+              <Skill key={index} {...skill} />
+            ))}
           </div>
         </div>
       </div>
