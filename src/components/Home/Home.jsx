@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Home.module.scss";
-import image from "../../milit.jpeg";
+import image from "../../images/milit.png";
 import {
   IconBrandInstagram,
   IconBrandFacebook,

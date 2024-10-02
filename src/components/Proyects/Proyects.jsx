@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from "react";
 import style from "./Proyects.module.scss";
-import pokeLanding from "../../poke.png";
-import rickLanding from "../../rick-landing.png";
-import laptop from "../../laptop.png";
-import rickHome from "../../rick-home.png";
-import rickFav from "../../rick-fav.png";
-import pokeHome from "../../pokeHome.png";
-import pokeDetail from "../../poke-detail.png";
-import mscLanding from "../../mscLandingg.png";
-import mscHome from "../../mscHome.png";
-import mscDetail from "../../mscDetail.png";
+
+import pokeLanding from "../../images/poke.png";
+import rickLanding from "../../images/rick-landing.png";
+import laptop from "../../images/laptop.png";
+import rickHome from "../../images/rick-home.png";
+import rickFav from "../../images/rick-fav.png";
+import pokeHome from "../../images/pokeHome.png";
+import pokeDetail from "../../images/poke-detail.png";
+import mscLanding from "../../images/mscLandingg.png";
+import mscHome from "../../images/mscHome.png";
+import mscDetail from "../../images/mscDetail.png";
 import Carrousel from "./Carrousel";
-import dashHome from "../../dash-Home.png";
-import dashCard from "../../dash-Card.png";
-import dashCart from "../../dash-Cart.png";
+import dashHome from "../../images/dash-Home.png";
+import dashCard from "../../images/dash-Card.png";
+import dashCart from "../../images/dash-Cart.png";
 
 export default function Proyects() {
   const [photosRick, setPhotosRick] = useState(rickLanding);

@@ -16,10 +16,10 @@ import {
   IconBrandDocker,
   IconBrandWordpress,
 } from "@tabler/icons-react";
-import logoSql from "../../logoSql.png";
-import logoExpress from "../../logoExpress.png";
-import logoNodeJs from "../../logoNodeJs.png";
-import logoSequelize from "../../logoSequelize.png";
+import logoSql from "../../images/logoSql.png";
+import logoExpress from "../../images/logoExpress.png";
+import logoNodeJs from "../../images/logoNodeJs.png";
+import logoSequelize from "../../images/logoSequelize.png";
 
 // Componente para cada skill individual
 const Skill = ({ icon: Icon, img, name, size = "36px", stroke = "1.4px" }) => (

@@ -1,25 +1,25 @@
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
-import pokeHome from "../../PokeHomet.png";
-import pokedetail from "../../PokeDetail.png";
-import rickLanding from "../../RickLanding.png";
-import rickHome from "../../rickHome.png";
-import rickEpisode from "../../rickEp.png";
-import rickFav from "../../rickFav.png";
-import mscLanding from "../../MscAmoblamientosLan.png";
-import mscHome from "../../HomeMSC.png";
-import mscCart from "../../mscCart.png";
-import mscRegister from "../../MSCregister.png";
-import mscReviews from "../../mscReviews.png";
-import mscSofa from "../../moreDetailMsc.png";
-import dashDash from "../../Dash-dash.png";
-import DashCart from "../../dash-Cartt.png";
-import dashPoke from "../../dash-Poke.png";
+
+import pokeHome from "../../images/PokeHomet.png";
+import pokedetail from "../../images/PokeDetail.png";
+import rickLanding from "../../images/RickLanding.png";
+import rickHome from "../../images/rickHome.png";
+import rickEpisode from "../../images/rickEp.png";
+import rickFav from "../../images/rickFav.png";
+import mscLanding from "../../images/MscAmoblamientosLan.png";
+import mscHome from "../../images/HomeMSC.png";
+import mscCart from "../../images/mscCart.png";
+import mscRegister from "../../images/MSCregister.png";
+import mscReviews from "../../images/mscReviews.png";
+import mscSofa from "../../images/moreDetailMsc.png";
+import dashDash from "../../images/dash-Cartt.png";
+import DashCart from "../../images/dash-Cartt.png";
+import dashPoke from "../../images/dash-Poke.png";
+import pokeHomeOriginal from "../../images/pokeHomeOriginal.png";
 //images
 
-import pokeHomeOriginal from "../../pokeHomeOriginal.png";
-
 import Modal from "react-bootstrap/Modal";
+import Carousel from "react-bootstrap/Carousel";
 
 export default function Carrousel({
   showPokemonCarousel,

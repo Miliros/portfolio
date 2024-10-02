@@ -7,19 +7,19 @@
   flex-direction: column;
 }
 .cntn {
-  background-image: url(../../imageEnddd.jpg);
+  background-image: url(../../images/imageEnddd.jpg);
   background-repeat: repeat-y;
   background-size: cover;
   background-position: 0% 0%;
   background-attachment: fixed;
   @include verySmall2 {
-    background-image: url(../../imageEndd.jpg);
+    background-image: url(../../images/imageEndd.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: unset;
   }
   @include verySmall {
-    background-image: url(../../imageEndd.jpg);
+    background-image: url(../../images/imageEndd.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: unset;
@@ -29,7 +29,7 @@
   border-top: 1px solid black;
   width: 100%;
   height: 205px;
-  background-image: url(../../walpaper.jpg);
+  background-image: url(../../images/walpaper.jpg);
   justify-content: center;
   display: flex;
   align-items: center;

@@ -108,7 +108,7 @@
   width: 50%;
   border-right: 1px solid black;
   height: 100%;
-  background-image: url("../../backPropro.jpg");
+  background-image: url("../../images/backPropro.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   @include verySmall {
@@ -124,7 +124,7 @@
   width: 50%;
   border-left: 1px solid black;
   height: 100%;
-  background-image: url("../../backPropro.jpg");
+  background-image: url("../../images/backPropro.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   /* border-bottom: 1px solid black; */
@@ -272,7 +272,7 @@
 }
 
 .backgroundTittle {
-  background-image: url("../../walpaper.jpg");
+  background-image: url("../../images/walpaper.jpg");
   width: 100%;
   height: 205px;
   justify-content: center;
