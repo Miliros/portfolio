@@ -16,6 +16,9 @@ import dashDash from "../../images/dash-Cartt.png";
 import DashCart from "../../images/dash-Cartt.png";
 import dashPoke from "../../images/dash-Poke.png";
 import pokeHomeOriginal from "../../images/pokeHomeOriginal.png";
+import logGes from "../../images/logGestionCa.png";
+import taskGes from "../../images/taskGestionCa.png";
+import newGes from "../../images/new-projectGestionCa.png";
 //images
 
 import Modal from "react-bootstrap/Modal";
@@ -26,6 +29,7 @@ export default function Carrousel({
   showRickCarousel,
   showMscCarousel,
   showDashCarousel,
+  showCarouselManagement,
   handleClose,
 }) {
   return (
@@ -35,11 +39,25 @@ export default function Carrousel({
         showPokemonCarousel ||
         showRickCarousel ||
         showMscCarousel ||
-        showDashCarousel
+        showDashCarousel ||
+        showCarouselManagement
       }
       size="xl"
       centered
     >
+      {showCarouselManagement && (
+        <Carousel>
+          <Carousel.Item>
+            <img className="d-block w-100" src={logGes} alt="Second slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={taskGes} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={newGes} alt="Third slide" />
+          </Carousel.Item>
+        </Carousel>
+      )}
       {showPokemonCarousel && (
         <Carousel>
           <Carousel.Item>

@@ -40,3 +40,17 @@
 .dropdown-menu .dropdown-item.active {
   background-color: #ebe9e2 !important;
 }
+.carousel-item {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+}
+.carousel-inner {
+  transition: height 0.3s ease-in-out;
+}

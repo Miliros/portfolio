@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "PROJECT MANAGEMENT",
+    "description": "Development of a web platform using React, React-Bootstrap, and CSS for the frontend, Express.js for the backend, and an SQL database. Authentication was implemented with JWT and bcrypt. The system allows project and task management based on user roles: administrators can create, edit, delete, and assign projects and tasks, as well as view all activities; non-admin users only manage their assigned tasks and projects, with the ability to update the status of tasks.",
+    "codeLink": "https://github.com/Miliros/gestion-de-proyectos",
+    "seeMoreButtonHandler": "setShowCarouselManagement(true)",
+    "photoKey": "photosManagement",
+    "containerStyle": "ctnMacRick",
+    "textContainerStyle": "ctnTextRick",
+    "lineStyle": "lineO"
+  },
+  {
+    "id": 2,
+    "title": "MSC AMOBLAMIENTOS",
+    "description": "MSC API is a Full Stack project that offers a unique online furniture shopping experience. It uses React, Redux, and Bootstrap on the frontend, with Express and PostgreSQL on the backend, managed through Sequelize. Auth0 handles security, and Cloudinary manages images. Admins can manage products, orders, and accounts through a robust panel.",
+    "codeLink": "https://github.com/AgustinMandarini/MSC-Amoblamientos",
+    "seeMoreButtonHandler": "setShowCarouselMsc(true)",
+    "photoKey": "photosMsc",
+    "containerStyle": "ctnMacPoke",
+    "textContainerStyle": "ctnTextRick",
+    "lineStyle": "lineT"
+  },
+  {
+    "id": 3,
+    "title": "RICK & MORTY API",
+    "description": "Rick & Morty API is a Single Page Application (SPA) using React and Redux for state management. It consumes 'The Rick and Morty API' via a Node.js backend with Express. Users can search, filter, sort, and favorite characters. The entire UI is styled with custom CSS, without external libraries.",
+    "codeLink": "https://github.com/Miliros/RICK-AND-MORTY",
+    "seeMoreButtonHandler": "setShowCarouselRick(true)",
+    "photoKey": "photosRick",
+    "containerStyle": "ctnMacRick",
+    "textContainerStyle": "ctnTextRick",
+    "lineStyle": "lineO"
+  },
+  {
+    "id": 4,
+    "title": "POKÉMON API",
+    "description": "A web application using React and Redux for the frontend and Node.js with Express on the backend. The app consumes the Pokémon API, allowing users to search, filter, sort, and view detailed information about Pokémon. It includes a PostgreSQL database to save user-created Pokémon.",
+    "codeLink": "https://github.com/Miliros/POKEMON",
+    "seeMoreButtonHandler": "setShowCarouselPokemon(true)",
+    "photoKey": "photosPoke",
+    "containerStyle": "ctnMacPoke",
+    "textContainerStyle": "ctnTextRick",
+    "lineStyle": "lineT"
+  },
+  {
+    "id": 5,
+    "title": "E-COMMERCE DASHBOARD",
+    "description": "An e-commerce dashboard that provides an admin panel for managing products, orders, and customers. Built using React, Redux Toolkit, and Tailwind CSS for a clean, responsive UI. The backend is powered by Node.js, Express, and MongoDB.",
+    "codeLink": "https://github.com/Miliros/e-commerce-dashboard",
+    "seeMoreButtonHandler": "setshowDashCarousel(true)",
+    "photoKey": "photosDash",
+    "containerStyle": "ctnMacRick",
+    "textContainerStyle": "ctnTextRick",
+    "lineStyle": "lineO"
+  }
+]

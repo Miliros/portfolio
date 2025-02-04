@@ -76,7 +76,6 @@
   border-top: 1px solid black;
   flex-direction: row;
   height: 100vh;
-  background-color: #ebe9e2;
 
   @include verySmall {
     flex-direction: column;
@@ -185,6 +184,9 @@
 
 .imgIpad {
   width: 489px;
+  // min-width: 489px;
+  // max-width: 489px;
+
   position: absolute;
   top: -17px;
   right: 0;
