@@ -112,18 +112,7 @@ export default function Contact() {
               style.phrase + (shouldAnimate ? ` ${style.animate}` : "")
             }
           >
-            <span> CONTACT ME/</span>
-            <span> CONTACT ME/</span>
-            <span> CONTACT ME/</span>
-            <span> CONTACT ME/</span>
-            <span> CONTACT ME/</span>
-            <span> CONTACT ME/</span>
-            <span> CONTACT ME/</span>
-            <span> CONTACT ME/</span>
-            <span> CONTACT ME/</span>
-            <span> CONTACT ME/</span>
-            <span> CONTACT ME/</span>
-            <span> CONTACT ME/</span>
+            {Array(14).fill(<span> CONTACT ME/</span>)}
           </div>
         </div>
         <div className={style.backgroundImag}>

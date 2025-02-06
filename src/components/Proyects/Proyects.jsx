@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import style from "./Proyects.module.scss";
 
 import pokeLanding from "../../images/poke.png";
@@ -28,6 +28,9 @@ export default function Proyects() {
   const [showCarouselMsc, setShowCarouselMsc] = useState(false);
   const [showDashCarousel, setshowDashCarousel] = useState(false);
   const [showCarouselManagement, setShowCarouselManagement] = useState(false);
+
+  const [shouldAnimate, setShouldAnimate] = useState(false);
+  const projectRef = useRef(null);
 
   const handleClose = () => {
     setShowCarouselPokemon(false);
@@ -78,6 +81,33 @@ export default function Proyects() {
     return () => intervals.forEach(clearInterval); // Limpio intervalos al desmontar
   }, []);
 
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.2,
+    };
+    const handleIntersection = (entries) => {
+      const entry = entries[0];
+      if (entry.isIntersecting) {
+        setShouldAnimate(true);
+      } else {
+        setShouldAnimate(false);
+      }
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, options);
+
+    if (projectRef.current) {
+      observer.observe(projectRef.current);
+    }
+
+    return () => {
+      if (projectRef.current) {
+        observer.unobserve(projectRef.current);
+      }
+    };
+  }, []);
   const changePhoto = (key, images) => {
     setPhotos((prevPhotos) => {
       const currentIndex = images.indexOf(prevPhotos[key]);
@@ -87,15 +117,18 @@ export default function Proyects() {
   };
 
   return (
-    <section id="proyects">
+    <section id="proyects" ref={projectRef}>
       <div className={style.cntnProyects}>
         <div className={style.backgroundTittle}>
           <p className={style.title}>PROJECTS</p>
         </div>
         <div className={style.container}>
-          <div className={style.phrase}>
-            <span className={style.animate}> HEY CHECK OUT MY PROJECTS/</span>
-            <span className={style.animate}> HEY CHECK OUT MY PROJECTS/</span>
+          <div
+            className={
+              style.phrase + (shouldAnimate ? ` ${style.animate}` : "")
+            }
+          >
+            {Array(14).fill(<span> CHECK OUT MY PROJECTS/</span>)}
           </div>
         </div>
 
