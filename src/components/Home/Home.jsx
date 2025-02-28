@@ -10,7 +10,6 @@ import {
 } from "@tabler/icons-react";
 
 export default function Home() {
-  // Array de enlaces sociales e íconos dentro del componente
   const socialLinks = [
     {
       name: "LinkedIn",

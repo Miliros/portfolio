@@ -1,3 +1,5 @@
+@import "./components/variables.scss";
+
 .App {
   text-align: center;
 }
@@ -45,6 +47,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include verySmall {
+    height: 140px;
+  }
+  @include verySmall2 {
+    height: 140px;
+  }
 }
 
 .carousel-item img {
